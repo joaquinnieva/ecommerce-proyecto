@@ -1,0 +1,49 @@
+.cont-inicio{
+    position: relative;
+    margin: 0px 0px 0px 80px;
+    z-index: 1;
+    user-select: none;
+}
+.fix-inicio{
+    width: 100%;
+    height: 89px;
+    z-index: -1;
+}
+.add-section1{
+    width: 90%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.add-section2{
+    width: 90%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.add-section3{
+    width: 90%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.add-section4{
+    width: 95%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.texto-ad{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-color: #fd621a85;
+    color: white;
+    bottom: 0px;
+    padding: 10px 40px 10px 40px;
+}
+
+@media (max-width: 700px) {
+    .texto-ad{
+        display: flex;
+        justify-content: center;
+        background-color: #fd621a85;
+        padding: 0px 0px;
+    } 
+}

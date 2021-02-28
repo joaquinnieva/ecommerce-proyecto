@@ -1,0 +1,89 @@
+.navbar-cont{
+    position: fixed;
+    width: 80px;
+    height: 100vh;
+    z-index: 3;
+    background-color: #ACACAC;
+    transition: ease .2s;
+    user-select: none;
+}
+.navbar-cont:hover{
+    width: 350px;
+    transition: ease .2s;
+}
+.linea-side{
+    position: fixed;
+    width: 1px;
+    height: 100vh;
+    background-color: #FD611A;
+    box-shadow: 1px 0px 2px 2px rgba(253, 97, 26, 0.25);
+}
+.navbar{
+    width: 100%;
+    height: calc(100% - 120px);
+    margin-top: 120px;
+}
+.nav-item{
+    width: 80px;
+    height: 50px;
+    margin-bottom: 5px;
+    transition: ease .2s;
+    cursor: pointer;
+    display: flex;
+}
+.navbar-cont:hover .nav-item{
+    width: 350px;
+    transition: ease .2s;
+}
+.item-img{
+    width: 24px;
+    height: 24px;
+    margin: 13px 28px 13px 28px;
+
+}
+.navbar-cont:hover .item-img{
+    width: 24px;
+    height: 24px;
+    margin: 13px 28px 13px 28px;
+
+}
+.item-text{
+    position: absolute;
+    opacity: 0;
+    width: 5px;
+    left: 75px;
+    margin: 13px auto 13px 0px;
+    overflow: hidden;
+    transition: ease .05s;
+}
+.navbar-cont:hover .item-text{
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    width: 150px;
+    height: 24px;
+    opacity: 1;
+    left: 80px;
+    margin: 13px auto 13px 45px;
+    overflow: hidden;
+    transition: ease .2s;
+}
+.cont-logo{
+    position: absolute;
+    width: 250px;
+    height: 90px;
+    display: flex;
+
+}
+.logosolo{
+    position: relative;
+    z-index: 10;
+    width: 70px;
+    height: 55px;
+    margin: 17px 30px 10px 5px;
+}
+.logotitulo{
+    width: auto;
+    height: 80px;
+    margin-top: 5px;
+}
