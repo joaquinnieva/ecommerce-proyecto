@@ -1,10 +1,11 @@
 .cont-card{
+    background-color: teal;
     height: 100px;
 }
 .cont-img-card{
     width: 20%;
 }
 .cont-text-card{
-    font-size: 5px;
+    background-color: teal;
 
 }
