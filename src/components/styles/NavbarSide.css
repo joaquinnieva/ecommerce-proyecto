@@ -3,7 +3,7 @@
     width: 80px;
     height: 100vh;
     z-index: 3;
-    background-color: #ACACAC;
+    background-color: #313131;
     transition: ease .2s;
     user-select: none;
 }
@@ -50,6 +50,7 @@
 .item-text{
     position: absolute;
     opacity: 0;
+    color: white;
     width: 5px;
     left: 75px;
     margin: 13px auto 13px 0px;
@@ -70,7 +71,6 @@
 }
 .cont-logo{
     position: absolute;
-    width: 250px;
     height: 90px;
     display: flex;
 
@@ -86,4 +86,14 @@
     width: auto;
     height: 80px;
     margin-top: 5px;
+}
+@media (max-width:500px){
+    .navbar-cont{
+        visibility: hidden;
+        width: 100vh;
+    }
+    .cont-logo{
+        visibility: visible;
+    }
+    
 }

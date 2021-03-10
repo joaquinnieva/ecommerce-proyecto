@@ -81,7 +81,13 @@
     align-items: center;
     justify-content: center;
 }
-@media (max-width: 700px) {
+@media (max-width: 500px) {
+    .cont-inicio{
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        z-index: 1;
+        user-select: none;
+    }
     .texto-ad{
         display: flex;
         justify-content: center;

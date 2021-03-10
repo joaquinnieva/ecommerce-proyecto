@@ -8,14 +8,14 @@ import sponsor from '../components/img/sponsor.png';
 import coins from '../components/img/coins.png';
 import logosolo from '../components/img/logosolo.png';
 import logotitulo from '../components/img/logotitulo.png';
-import Ad1 from '../components/img/1inicio/ad1.png';
-import Ad2 from '../components/img/1inicio/ad2.jpg';
-import Ad3 from '../components/img/1inicio/ad3.jpg';
-import Ad4 from '../components/img/1inicio/ad4.png';
-import Ad5 from '../components/img/1inicio/ad5.jpg';
-import Ad6 from '../components/img/1inicio/ad6.png';
-import Ad7 from '../components/img/1inicio/ad6.png';
-import Ad8 from '../components/img/1inicio/ad6.png';
+import ad1 from '../components/img/1inicio/ad1.png';
+import ad2 from '../components/img/1inicio/ad2.jpg';
+import ad3 from '../components/img/1inicio/ad3.jpg';
+import ad4 from '../components/img/1inicio/ad4.png';
+import ad5 from '../components/img/1inicio/ad5.jpg';
+import ad6 from '../components/img/1inicio/ad6.png';
+import ad7 from '../components/img/1inicio/ad6.png';
+import ad8 from '../components/img/1inicio/ad6.png';
 import nvidia from '../components/img/1inicio/nvidia.jpg';
 import compragamer from '../components/img/1inicio/compragamer.jpg';
 import product1 from '../components/img/productos/product1.jpg';
@@ -52,14 +52,14 @@ export default
     "coins": coins,
     "logosolo": logosolo,
     "logotitulo": logotitulo,
-    "Ad1": Ad1,
-    "Ad2": Ad2,
-    "Ad3": Ad3,
-    "Ad4": Ad4,
-    "Ad5": Ad5,
-    "Ad6": Ad6,
-    "Ad7": Ad7,
-    "Ad8": Ad8,
+    "ad1": ad1,
+    "ad2": ad2,
+    "ad3": ad3,
+    "ad4": ad4,
+    "ad5": ad5,
+    "ad6": ad6,
+    "ad7": ad7,
+    "ad8": ad8,
     "nvidia":nvidia,
     "compragamer":compragamer,
     "product1":product1,

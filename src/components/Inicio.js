@@ -12,32 +12,32 @@ function Inicio () {
                 <Slideshow controles={true} autoplay={true} velocidad="3000" intervalo="8000">
                     <Slide>
                         <a href="#">
-                            <img src={Images.Ad2} alt=""/>
+                            <img src={Images.ad1} alt=""/>
                         </a>
                     </Slide>
                     <Slide>
                         <a href="#">
-                            <img src={Images.Ad1} alt=""/>
+                            <img src={Images.ad2} alt=""/>
                         </a>
                     </Slide>
                     <Slide>
                         <a href="#">
-                            <img src={Images.Ad3} alt=""/>
+                            <img src={Images.ad3} alt=""/>
                         </a>
                     </Slide>
                     <Slide>
                         <a href="#">
-                            <img src={Images.Ad4} alt=""/>
+                            <img src={Images.ad4} alt=""/>
                         </a>
                     </Slide>
                     <Slide>
                         <a href="#">
-                            <img src={Images.Ad5} alt=""/>
+                            <img src={Images.ad5} alt=""/>
                         </a>
                     </Slide>
                     <Slide>
                         <a href="#">
-                            <img src={Images.Ad6} alt=""/>
+                            <img src={Images.ad6} alt=""/>
                         </a>
                     </Slide>
                 </Slideshow>
