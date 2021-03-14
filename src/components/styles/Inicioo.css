@@ -6,28 +6,29 @@
 }
 .fix-inicio{
     width: 100%;
-    height: 89px;
+    height: 100px;
     z-index: -1;
 }
 .ad-seccion1{
-    width: 90%;
-    margin: 20px auto;
+    width: 100%;
+    margin: auto;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 .ad-seccion2{
-    width: 90%;
-    margin: 20px auto;
+    width: 98%;
+    margin: 0px auto;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 .ad-seccion3{
     width: 90%;
-    margin: 50px auto;
+    margin: 0px auto;
     overflow: hidden;
-}
-.ad-seccion4{
-    width: 95%;
-    margin: 20px auto;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 .texto-ad{
     display: flex;
@@ -103,5 +104,10 @@
         border: 2px solid rgba(0, 0, 0, 0.08);
         display: flex;
         flex-direction: column;
+    }
+    .fix-inicio{
+        width: 100%;
+        height: 150px;
+        z-index: -1;
     }
 }

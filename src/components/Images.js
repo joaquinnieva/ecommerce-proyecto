@@ -8,23 +8,20 @@ import sponsor from '../components/img/sponsor.png';
 import coins from '../components/img/coins.png';
 import logosolo from '../components/img/logosolo.png';
 import logotitulo from '../components/img/logotitulo.png';
-import ad1 from '../components/img/1inicio/ad1.png';
-import ad2 from '../components/img/1inicio/ad2.jpg';
-import ad3 from '../components/img/1inicio/ad3.jpg';
-import ad4 from '../components/img/1inicio/ad4.png';
-import ad5 from '../components/img/1inicio/ad5.jpg';
-import ad6 from '../components/img/1inicio/ad6.png';
-import ad7 from '../components/img/1inicio/ad6.png';
-import ad8 from '../components/img/1inicio/ad6.png';
+import derecha from '../components/img/derecha.png';
+import izquierda from '../components/img/izquierda.png';
+import DATAWEB from '../components/img/DATAWEB.jpg';
+import menu from '../components/img/menu.png';
+import add1 from '../components/img/1inicio/add1.png';
+import add2 from '../components/img/1inicio/add2.jpg';
+import add3 from '../components/img/1inicio/add3.jpg';
+import add4 from '../components/img/1inicio/add4.png';
+import add5 from '../components/img/1inicio/add5.jpg';
+import add6 from '../components/img/1inicio/add6.png';
+import add7 from '../components/img/1inicio/add6.png';
+import add8 from '../components/img/1inicio/add6.png';
 import nvidia from '../components/img/1inicio/nvidia.jpg';
 import compragamer from '../components/img/1inicio/compragamer.jpg';
-import product1 from '../components/img/productos/product1.jpg';
-import product2 from '../components/img/productos/product2.jpg';
-import product3 from '../components/img/productos/product3.jpg';
-import product4 from '../components/img/productos/product4.jpg';
-import product5 from '../components/img/productos/product5.jpg';
-import product6 from '../components/img/productos/product6.jpg';
-import product7 from '../components/img/productos/product7.jpg';
 import ads1 from '../components/img/2inicio/1.jpg';
 import ads2 from '../components/img/2inicio/2.jpg';
 import ads3 from '../components/img/2inicio/3.png';
@@ -52,23 +49,20 @@ export default
     "coins": coins,
     "logosolo": logosolo,
     "logotitulo": logotitulo,
-    "ad1": ad1,
-    "ad2": ad2,
-    "ad3": ad3,
-    "ad4": ad4,
-    "ad5": ad5,
-    "ad6": ad6,
-    "ad7": ad7,
-    "ad8": ad8,
+    "derecha": derecha,
+    "izquierda": izquierda,
+    "DATAWEB":DATAWEB,
+    "menu": menu,
+    "add1": add1,
+    "add2": add2,
+    "add3": add3,
+    "add4": add4,
+    "add5": add5,
+    "add6": add6,
+    "add7": add7,
+    "add8": add8,
     "nvidia":nvidia,
     "compragamer":compragamer,
-    "product1":product1,
-    "product2":product2,
-    "product3":product3,
-    "product4":product4,
-    "product5":product5,
-    "product6":product6,
-    "product7":product7,
     "ads1":ads1,
     "ads2":ads2,
     "ads3":ads3,

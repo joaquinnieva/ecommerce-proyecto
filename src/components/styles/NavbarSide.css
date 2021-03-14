@@ -1,79 +1,106 @@
-.navbar-cont{
+.navbar-container{
     position: fixed;
-    width: 80px;
-    height: 100vh;
+    width: auto;
+    height: auto;
     z-index: 3;
-    background-color: #313131;
+    
     transition: ease .2s;
     user-select: none;
+    overflow: hidden;
 }
-.navbar-cont:hover{
-    width: 350px;
-    transition: ease .2s;
+.active{
+    background: #F8F8FB;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 }
-.linea-side{
+.menu{
     position: fixed;
-    width: 1px;
-    height: 100vh;
-    background-color: #FD611A;
-    box-shadow: 1px 0px 2px 2px rgba(253, 97, 26, 0.25);
+    width: 100%;
+    height: 40px;
+    top: 100px;
+    z-index: 5;
+    background-color: #313131;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-title{
+    margin: 0px 0px 0px 20px;
+    width: 70px;
+    height: 30px;
+    color: #C4C4C4;
+    font-size: 20px;
+    font-weight: 400;
+}
+.menu-icon{
+    height: 15px;
+    width: auto;
+    margin: 0px 20px 0px 0px;
+}
+.navbar-contenido-close{
+    background-color: #313131;
+    visibility: hidden;
+    height: 0px;
+    transition: ease .5s;
+}
+.navbar-contenido{
+    background-color: #313131;
+    width: 100%;
+    height: 460px;
+    transition: ease .5s;
 }
 .navbar{
-    width: 100%;
-    height: calc(100% - 120px);
-    margin-top: 120px;
+    width: 100vw;
+    height: 460px;
+    margin-top: 50px;
 }
 .nav-item{
-    width: 80px;
+    width: auto;
     height: 50px;
     margin-bottom: 5px;
     transition: ease .2s;
     cursor: pointer;
     display: flex;
 }
-.navbar-cont:hover .nav-item{
-    width: 350px;
-    transition: ease .2s;
+.nav-item:hover .item-text{
+    text-decoration: underline white;
 }
 .item-img{
     width: 24px;
     height: 24px;
     margin: 13px 28px 13px 28px;
-
 }
-.navbar-cont:hover .item-img{
+
+.active .item-img{
     width: 24px;
     height: 24px;
-    margin: 13px 28px 13px 28px;
-
+    margin: 13px 28px 13px 25px;
 }
 .item-text{
     position: absolute;
-    opacity: 0;
+    opacity: 1;
     color: white;
-    width: 5px;
+    width: auto;
+    text-align: center;
     left: 75px;
     margin: 13px auto 13px 0px;
     overflow: hidden;
     transition: ease .05s;
 }
-.navbar-cont:hover .item-text{
-    display: block;
-    text-align: center;
-    font-weight: 600;
-    width: 150px;
-    height: 24px;
-    opacity: 1;
-    left: 80px;
-    margin: 13px auto 13px 45px;
-    overflow: hidden;
-    transition: ease .2s;
-}
-.cont-logo{
+.active .item-text{
     position: absolute;
-    height: 90px;
-    display: flex;
+    opacity: 1;
+    color: black;
+    width: auto;
+    left: 75px;
+    margin: 13px 0px 13px 0px;
+    overflow: hidden;
+    transition: ease .05s;
+}
 
+.cont-logo{
+    position: relative;
+    height: 90px;
+    width: 100px;
 }
 .logosolo{
     position: relative;
@@ -82,18 +109,69 @@
     height: 55px;
     margin: 17px 30px 10px 5px;
 }
-.logotitulo{
-    width: auto;
-    height: 80px;
-    margin-top: 5px;
-}
-@media (max-width:500px){
-    .navbar-cont{
-        visibility: hidden;
-        width: 100vh;
+
+@media (min-width:500px){
+    .linea-side{
+        position: absolute;
+        width: 1px;
+        height: 100vh;
+        background-color: #FD611A;
+        box-shadow: 1px 0px 2px 2px rgba(253, 97, 26, 0.25);
     }
-    .cont-logo{
-        visibility: visible;
+    .menu{
+        display: none;
+    }
+    .navbar{
+        margin: 10px 0px 0px 0px;
+        position: fixed;
+        width: 80px;
+        height: 100vh;
+        z-index: 5;
     }
     
+    .navbar-contenido-close{
+        position: fixed;
+        background-color: #313131;
+        visibility: visible;
+        transition: ease .5s;
+    }
+    .navbar-container{
+        position: fixed;
+        width: 80px;
+        height: 100vh;
+        z-index: 3;
+        background-color: #313131;
+        
+        transition: ease .2s;
+        user-select: none;
+        overflow: hidden;
+    }
+    .item-text{
+        visibility: hidden;
+        width: 150px;
+    }
+    .navbar-container:hover{
+        width: 250px;
+    }
+    .navbar-container:hover .item-text{
+        width: 150px;
+        visibility: visible;
+    }
+    .active .item-text{
+        position: absolute;
+        opacity: 1;
+        color: black;
+        width: 150px;
+        left: 75px;
+        margin: 13px 0px 13px 0px;
+        overflow: hidden;
+    }
+    .navbar-container .active {
+        width: 80px;
+        background-color: white;
+    }
+    .navbar-container:hover .active {
+        width: 250px;
+        background-color: white;
+    }
 }
