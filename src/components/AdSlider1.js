@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import DataAd1 from './DataAd1';
 import Images from '../components/Images';
 import './styles/AdSlider.css';
 
-const AdSlider1 = ({ slides, controles}) => {
+const AdSlider1 = ({  slides,
+                      controles=false,
+                      autoplay=false}) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -11,6 +13,12 @@ const AdSlider1 = ({ slides, controles}) => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
   
+  
+    if(autoplay){
+      setInterval(() => {
+      derSlide();
+      },7000);
+    }
   
   const izqSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
@@ -22,10 +30,10 @@ const AdSlider1 = ({ slides, controles}) => {
 
   return (
     <div className='slider' >
-      <div className={controles}>
+      {controles && <div className="controles">
         <img className='izq' onClick={izqSlide} src={Images.izquierda} />
         <img className='der' onClick={derSlide} src={Images.derecha} />
-      </div>
+      </div>}
       {DataAd1.map((slide, index) => {
         return (
           <div

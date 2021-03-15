@@ -15,13 +15,13 @@ function Inicio () {
 
 
             <div className="ad-seccion1">
-                <AdSlider1 slides={DataAd1} controles="si" />
+                <AdSlider1 slides={DataAd1} autoplay />
             </div>
             <div className="ad-seccion2">
-                <AdSlider2 slides={DataAd2} controles="si" />
+                <AdSlider2 slides={DataAd2} />
             </div>
             <div className="ad-seccion3">
-                <AdSlider3 slides={DataAd3} controles="si" />
+                <AdSlider3 slides={DataAd3} />
             </div>
         </div>
     )

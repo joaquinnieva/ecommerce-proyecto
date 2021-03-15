@@ -3,7 +3,7 @@ import DataAd3 from './DataAd3';
 import Images from '../components/Images'
 import './styles/AdSliderMore.css'
 
-const AdSlider3 = ({ slides, controles}) => {
+const AdSlider3 = ({ slides, controles=false}) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -22,10 +22,11 @@ const AdSlider3 = ({ slides, controles}) => {
 
   return (
     <div className='slider' >
-      <div className={controles}>
+      {controles && 
+      <div className="controles">
         <img className='izq' onClick={izqSlide} src={Images.izquierda} />
         <img className='der' onClick={derSlide} src={Images.derecha} />
-      </div>
+      </div>}
       {DataAd3.map((slide, index) => {
         return (
           <div

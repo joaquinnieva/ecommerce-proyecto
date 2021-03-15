@@ -3,7 +3,8 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  BrowserRouter
+  BrowserRouter,
+  Redirect
 } from "react-router-dom";
 
 import './App.css';
@@ -34,6 +35,10 @@ function App() {
         <Route exact path="/ayuda" component={Ayuda} />
         <Route exact path="/marcas-sponsor" component={MarcasSponsor} />
         <Route exact path="/gamer-coins" component={GamerCoins} />
+
+        <Route path="/">
+            <Redirect to="/inicio" />
+        </Route>
       </Switch>
         <Footer/>
     </BrowserRouter>

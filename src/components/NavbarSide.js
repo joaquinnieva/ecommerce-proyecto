@@ -21,7 +21,7 @@ function NavbarSide () {
             
             <div className="linea-side"></div>
 
-            <div className="cont-logo"><img className="logosolo" src={Images.logosolo} /></div>
+            <div className="fix-logo"></div>
 
             <div className={click ? "navbar-contenido-close" : "navbar-contenido"}>
 

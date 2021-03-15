@@ -12,6 +12,8 @@ import derecha from '../components/img/derecha.png';
 import izquierda from '../components/img/izquierda.png';
 import DATAWEB from '../components/img/DATAWEB.jpg';
 import menu from '../components/img/menu.png';
+import carrito from '../components/img/carrito.png';
+import buscador from '../components/img/buscador.png';
 import add1 from '../components/img/1inicio/add1.png';
 import add2 from '../components/img/1inicio/add2.jpg';
 import add3 from '../components/img/1inicio/add3.jpg';
@@ -53,6 +55,8 @@ export default
     "izquierda": izquierda,
     "DATAWEB":DATAWEB,
     "menu": menu,
+    "carrito": carrito,
+    "buscador": buscador,
     "add1": add1,
     "add2": add2,
     "add3": add3,
