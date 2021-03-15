@@ -1,8 +1,4 @@
 import React, {useState} from 'react';
-import {
-    BrowserRouter as Router,
-    NavLink
-  } from "react-router-dom";
 import Images from './Images';
 import "./styles/NavbarSide.css"
 
@@ -26,38 +22,38 @@ function NavbarSide () {
             <div className={click ? "navbar-contenido-close" : "navbar-contenido"}>
 
             <nav className="navbar">
-                <NavLink className="nav-item" to="/inicio">
+                <a className="nav-item" href="/inicio">
                     <img className="item-img" src={Images.inicio} />
                     <div className="item-text">Inicio</div>
-                </NavLink>
-                <NavLink className="nav-item" to="/productos">
+                </a>
+                <a className="nav-item" href="/productos">
                     <img className="item-img" src={Images.productos} />
                     <div className="item-text">Productos</div>
-                </NavLink>
-                <NavLink className="nav-item" to="/arma-tu-pc" >
+                </a>
+                <a className="nav-item" href="/arma-tu-pc" >
                     <img className="item-img" src={Images.armatupc} />
                     <div className="item-text">Armá tu PC</div>
-                </NavLink>
-                <NavLink className="nav-item" to="/encontra-tu-pc" >
+                </a>
+                <a className="nav-item" href="/encontra-tu-pc" >
                     <img className="item-img" src={Images.encontratupc} />
                     <div className="item-text">Encontrá tu PC</div>
-                </NavLink>
-                <NavLink className="nav-item" to="/mi-cuenta" >
+                </a>
+                <a className="nav-item" href="/mi-cuenta" >
                     <img className="item-img" src={Images.cuenta} />
                     <div className="item-text">Mi cuenta</div>
-                </NavLink>
-                <NavLink className="nav-item" to="/ayuda" >
+                </a>
+                <a className="nav-item" href="/ayuda" >
                     <img className="item-img" src={Images.ayuda} />
                     <div className="item-text">Ayuda</div>
-                </NavLink>
-                <NavLink className="nav-item" to="/marcas-sponsor" >
+                </a>
+                <a className="nav-item" href="/marcas-sponsor" >
                     <img className="item-img" src={Images.sponsor} />
                     <div className="item-text">Marcas sponsor</div>
-                </NavLink>
-                <NavLink className="nav-item" to="/gamer-coins" >
+                </a>
+                <a className="nav-item" href="/gamer-coins" >
                     <img className="item-img" src={Images.coins} />
                     <div className="item-text">Gamer Coins</div>
-                </NavLink>
+                </a>
             </nav>
         </div>
         </div>

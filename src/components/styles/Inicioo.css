@@ -1,8 +1,9 @@
 .cont-inicio{
     position: relative;
-    margin: 0px 0px 0px 80px;
+    margin: 0px 5px 0px 85px;
     z-index: 1;
     user-select: none;
+    overflow: hidden;
 }
 .fix-inicio{
     width: 100%;

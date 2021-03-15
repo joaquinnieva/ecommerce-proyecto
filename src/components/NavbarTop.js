@@ -6,7 +6,7 @@ import "./styles/NavbarTop.css"
 function NavbarTop () {
     return(
     <>    
-        <div className="cont-logosolo"><img className="logosolo" src={Images.logosolo} /></div>
+        <div className="cont-logosolo"><a href="/inicio"> <img className="logosolo" src={Images.logosolo} /></a></div>
         <div className="navbartop">
             <div className="framefix"></div>
 
