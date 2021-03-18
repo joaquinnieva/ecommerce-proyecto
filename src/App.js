@@ -7,7 +7,6 @@ import {
   Redirect
 } from "react-router-dom";
 
-import './App.css';
 import NavbarSide from './components/NavbarSide';
 import NavbarTop from './components/NavbarTop';
 import Footer from './components/Footer';
@@ -24,8 +23,6 @@ import GamerCoins from "./pages/GamerCoins";
 function App() {
   return (
     <BrowserRouter>
-        <NavbarSide />
-        <NavbarTop />
       <Switch>
         <Route exact path="/inicio" component={Inicio} />
         <Route exact path="/productos" component={Productos} />
@@ -40,7 +37,6 @@ function App() {
             <Redirect to="/inicio" />
         </Route>
       </Switch>
-        <Footer/>
     </BrowserRouter>
   );
 }

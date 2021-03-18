@@ -37,7 +37,18 @@ import ads10 from '../components/img/2inicio/10.jpg';
 import ads11 from '../components/img/2inicio/11.jpg';
 import ads12 from '../components/img/2inicio/12.jpg';
 import ads13 from '../components/img/2inicio/13.jpg';
-
+import product1 from '../components/img/productos/product1.jpg';
+import product2 from '../components/img/productos/product2.jpg';
+import product3 from '../components/img/productos/product3.jpg';
+import product4 from '../components/img/productos/product4.jpg';
+import product5 from '../components/img/productos/product5.jpg';
+import product6 from '../components/img/productos/product6.jpg';
+import product7 from '../components/img/productos/product7.jpg';
+import product8 from '../components/img/productos/product8.jpg';
+import product9 from '../components/img/productos/product9.jpg';
+import gamercoins from '../components/img/gamercoins.jpg';
+import border from '../components/img/border.jpg';
+import volver from '../components/img/volver.png';
 
 export default
     {
@@ -80,4 +91,16 @@ export default
     "ads11":ads11,
     "ads12":ads12,
     "ads13":ads13,
+    "product1":product1,
+    "product2":product2,
+    "product3":product3,
+    "product4":product4,
+    "product5":product5,
+    "product6":product6,
+    "product7":product7,
+    "product8":product8,
+    "product9":product9,
+    "gamercoins":gamercoins,
+    "border":border,
+    "volver":volver,
     }

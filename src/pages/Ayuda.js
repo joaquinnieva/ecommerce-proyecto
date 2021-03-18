@@ -1,18 +1,17 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  BrowserRouter
-} from "react-router-dom";
-
-
+import AyudaInfo from "../components/AyudaInfo";
+import NavbarSide from "../components/NavbarSide";
+import NavbarTop from "../components/NavbarTop";
+import Footer from "../components/Footer";
 
 function Ayuda() {
   return (
-    <div>
-
-    </div>
+    <>
+      <NavbarSide />
+      <NavbarTop />
+      <AyudaInfo />
+      <Footer />
+    </>
   );
 }
 

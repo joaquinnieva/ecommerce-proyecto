@@ -1,0 +1,77 @@
+.cardmarcas-cont {
+  width: auto;
+  height: auto;
+  margin: auto 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "card1 card2"
+    "card3 card4"
+    "card5 card6";
+}
+.cardmarcas1 {
+  width: 350px;
+  height: 250px;
+  margin: 30px auto;
+  background: linear-gradient(98.29deg, #160000 16.4%, #780013 116.66%);
+  border-radius: 20px;
+  grid-area: card1;
+}
+.cardmarcas2 {
+  width: 350px;
+  height: 250px;
+  margin: 30px auto;
+  background: linear-gradient(279.85deg, #ffe600 10.11%, #9a8b00 100%);
+  border-radius: 20px;
+  grid-area: card2;
+}
+.cardmarcas3 {
+  width: 350px;
+  height: 250px;
+  margin: 30px auto;
+  background: linear-gradient(99.85deg, #911111 0%, #955c5c 100%);
+  border-radius: 20px;
+  grid-area: card3;
+}
+.cardmarcas4 {
+  width: 350px;
+  height: 250px;
+  margin: 30px auto;
+  background: linear-gradient(99.85deg, #dcffcc 0%, #dbfecb 100%);
+  border-radius: 20px;
+  grid-area: card4;
+}
+.cardmarcas5 {
+  width: 350px;
+  height: 250px;
+  margin: 30px auto;
+  background: linear-gradient(279.85deg, #76B900 0%, #000000 100%);
+  border-radius: 20px;
+  grid-area: card5;
+}
+.cardmarcas6 {
+  width: 350px;
+  height: 250px;
+  margin: 30px auto;
+  background: linear-gradient(99.85deg, #850000 9.9%, #b85d5d 100%);
+  border-radius: 20px;
+  grid-area: card6;
+}
+
+@media (max-width: 1000px) {
+  .cardmarcas-cont {
+    width: auto;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5"
+      "card6";
+  }
+}

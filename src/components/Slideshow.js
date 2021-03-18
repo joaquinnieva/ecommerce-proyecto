@@ -103,6 +103,7 @@ const ContenedorPrincipal = styled.div`
 	position: relative;
 	margin: 15px 10px;
 	overflow:hidden;
+	user-select: none;
 `;
 
 const ContenedorSlideshow = styled.div`

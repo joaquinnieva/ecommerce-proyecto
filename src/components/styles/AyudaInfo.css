@@ -1,0 +1,14 @@
+.cont-texto-ayuda{
+    width: auto;
+    height: auto;
+    margin: 0px 30px 100px;
+    color: #313131;
+}
+.ayuda-titulo{
+    margin: 0px 0px 20px;
+    height: 70px;
+    border-bottom: 1px solid #313131;;
+    color: #313131;
+    display: flex;
+    align-items: center;
+}

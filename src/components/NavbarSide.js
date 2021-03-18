@@ -30,18 +30,18 @@ function NavbarSide () {
                     <img className="item-img" src={Images.productos} />
                     <div className="item-text">Productos</div>
                 </a>
-                <a className="nav-item" href="/arma-tu-pc" >
+                {/* <a className="nav-item" href="/arma-tu-pc" >
                     <img className="item-img" src={Images.armatupc} />
                     <div className="item-text">Armá tu PC</div>
-                </a>
+                </a> */}
                 <a className="nav-item" href="/encontra-tu-pc" >
                     <img className="item-img" src={Images.encontratupc} />
                     <div className="item-text">Encontrá tu PC</div>
                 </a>
-                <a className="nav-item" href="/mi-cuenta" >
+                {/* <a className="nav-item" href="/mi-cuenta">
                     <img className="item-img" src={Images.cuenta} />
                     <div className="item-text">Mi cuenta</div>
-                </a>
+                </a> */}
                 <a className="nav-item" href="/ayuda" >
                     <img className="item-img" src={Images.ayuda} />
                     <div className="item-text">Ayuda</div>

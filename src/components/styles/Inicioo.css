@@ -1,114 +1,22 @@
-.cont-inicio{
-    position: relative;
-    margin: 0px 5px 0px 85px;
-    z-index: 1;
-    user-select: none;
-    overflow: hidden;
+.cont-page {
+  position: relative;
+  margin: 0px 0px 0px 80px;
+  z-index: 1;
+  overflow: hidden;
 }
-.fix-inicio{
-    width: 100%;
-    height: 100px;
-    z-index: -1;
+.fix-page {
+  width: 100%;
+  height: 90px;
+  z-index: -1;
 }
-.ad-seccion1{
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-}
-.ad-seccion2{
-    width: 98%;
-    margin: 0px auto;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-}
-.ad-seccion3{
-    width: 90%;
-    margin: 0px auto;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-}
-.texto-ad{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    background-color: #fd621a85;
-    color: white;
-    bottom: 0px;
-    padding: 10px 40px 10px 40px;
-}
-.cont-card{
-    position: relative;
-    max-width: 300px;
-    padding: 10px 10px;
-    margin: auto 10px auto 40px;
-    border-radius: 34px;
-    border: 2px solid rgba(0, 0, 0, 0.08);
-    display: flex;
-    flex-direction: column;
-}
-.img-card{
-    max-width: 130px;
-    margin: 0px auto 20px auto;
-}
-.p-nombre{
-    font-size: 12px;
-    width: 130px;
-    height: 40px;
-}
-.p-tipo{
-    margin-top: 5px;
-    opacity: .5;
-    font-size: 10px;
-}
-.p-precio{
-    text-align: center;
-    font-size: 16px;
-    padding: 7px 0px 33px 0px;
-}
-.p-carrito{
-    position: absolute;
-    width: 100%;
-    height: 30px;
-    bottom: 0px;
-    left: 0px;
-    background-color: #FD611A;
-    border-radius: 0px 0px 34px 34px;
-    text-align: center;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 @media (max-width: 500px) {
-    .cont-inicio{
-        position: relative;
-        margin: 0px 0px 0px 0px;
-        z-index: 1;
-        user-select: none;
-    }
-    .texto-ad{
-        display: flex;
-        justify-content: center;
-        background-color: #fd621a85;
-        padding: 0px 0px;
-    } 
-    .cont-card{
-        position: relative;
-        max-width: 200px;
-        padding: 10px 10px;
-        margin: auto 10px auto 40px;
-        border-radius: 34px;
-        border: 2px solid rgba(0, 0, 0, 0.08);
-        display: flex;
-        flex-direction: column;
-    }
-    .fix-inicio{
-        width: 100%;
-        height: 150px;
-        z-index: -1;
-    }
+  .cont-page {
+    margin: 0px 0px 0px 0px;
+  }
+  .fix-page {
+    width: 100%;
+    height: 150px;
+    z-index: -1;
+  }
 }

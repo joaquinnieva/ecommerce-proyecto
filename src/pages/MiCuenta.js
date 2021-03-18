@@ -1,18 +1,16 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  BrowserRouter
-} from "react-router-dom";
-
-
+import NavbarSide from "../components/NavbarSide";
+import NavbarTop from "../components/NavbarTop";
+import Footer from "../components/Footer";
 
 function MiCuenta() {
   return (
-    <div>
+    <>
+      <NavbarSide />
+      <NavbarTop />
 
-    </div>
+      <Footer />
+    </>
   );
 }
 
