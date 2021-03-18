@@ -10,7 +10,11 @@ import logosolo from '../components/img/logosolo.png';
 import logotitulo from '../components/img/logotitulo.png';
 import derecha from '../components/img/derecha.png';
 import izquierda from '../components/img/izquierda.png';
-import DATAWEB from '../components/img/DATAWEB.jpg';
+import DATAWEB from '../components/img/footer/DATAWEB.jpg';
+import youtube from '../components/img/footer/youtube.png';
+import instagram from '../components/img/footer/instagram.png';
+import facebook from '../components/img/footer/facebook.png';
+import twitter from '../components/img/footer/twitter.png';
 import menu from '../components/img/menu.png';
 import carrito from '../components/img/carrito.png';
 import buscador from '../components/img/buscador.png';
@@ -49,6 +53,12 @@ import product9 from '../components/img/productos/product9.jpg';
 import gamercoins from '../components/img/gamercoins.jpg';
 import border from '../components/img/border.jpg';
 import volver from '../components/img/volver.png';
+import amd from '../components/img/marcas/amd.svg';
+import mnvidia from '../components/img/marcas/nvidia.png';
+import zotac from '../components/img/marcas/zotac.svg';
+import seagate from '../components/img/marcas/seagate.svg';
+import hyperx from '../components/img/marcas/hyperx.png';
+import asus from '../components/img/marcas/asus.jpg';
 
 export default
     {
@@ -65,6 +75,10 @@ export default
     "derecha": derecha,
     "izquierda": izquierda,
     "DATAWEB":DATAWEB,
+    "youtube":youtube,
+    "facebook":facebook,
+    "instagram":instagram,
+    "twitter":twitter,
     "menu": menu,
     "carrito": carrito,
     "buscador": buscador,
@@ -103,4 +117,10 @@ export default
     "gamercoins":gamercoins,
     "border":border,
     "volver":volver,
+    "amd":amd,
+    "mnvidia":mnvidia,
+    "seagate":seagate,
+    "hyperx":hyperx,
+    "asus":asus,
+    "zotac":zotac,
     }

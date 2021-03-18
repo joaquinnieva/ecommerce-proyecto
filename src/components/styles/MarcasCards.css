@@ -1,0 +1,74 @@
+.cardmarcas-cont {
+  width: auto;
+  height: auto;
+  margin: 50px 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "card1 card2"
+    "card3 card4"
+    "card5 card6";
+}
+.card {
+  width: 330px;
+  height: 236px;
+  margin: 30px auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+}
+.card:hover {
+  width: 350px;
+  height: 250px;
+  box-shadow: 0px 0px 30px 1px #000000;
+}
+.card:hover .card-img {
+  width: 250px;
+}
+.marcas1 {
+  background: #414141;
+  grid-area: card1;
+}
+.marcas2 {
+  background: #fff347;
+  grid-area: card2;
+}
+.marcas3 {
+  background: #000000;
+  grid-area: card3;
+}
+.marcas4 {
+  background: #9cff9c;
+  grid-area: card4;
+}
+.marcas5 {
+  background: #9b9b9b;
+  grid-area: card5;
+}
+.marcas6 {
+  background: #c71f1f;
+  grid-area: card6;
+}
+.card-img {
+  width: 230px;
+  transition: .5s;
+}
+
+@media (max-width: 1000px) {
+  .cardmarcas-cont {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5"
+      "card6";
+  }
+}

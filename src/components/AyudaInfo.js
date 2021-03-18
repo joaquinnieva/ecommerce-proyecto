@@ -4,7 +4,6 @@ import "./styles/AyudaInfo.css";
 function AyudaInfo() {
   return (
     <div className="cont-page">
-      <div className="fix-page" />
       <div className="cont-texto-ayuda">
         <div className="ayuda-titulo">
           <h2>• Preguntas frecuentes</h2>

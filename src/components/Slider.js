@@ -62,7 +62,7 @@ const Slider = () => {
 				</Slide>
 			</Slideshow>
 
-			<Slideshow controles={false} autoplay={true} velocidad="3000" intervalo="3000">
+			<Slideshow controles={false} autoplay={true} velocidad="2000" intervalo="0">
 				<Slide tamaño="10%">
 					<a href="#">
 						<img src={Images.ads1} alt="alt"/>

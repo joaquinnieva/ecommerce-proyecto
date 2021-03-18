@@ -1,180 +1,213 @@
-.navbar-container{
+.navbar-container {
+  position: fixed;
+  width: auto;
+  height: auto;
+  z-index: 3;
+
+  transition: ease 0.2s;
+  user-select: none;
+  overflow: hidden;
+}
+
+.menu {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  top: 100px;
+  z-index: 5;
+  background-color: #313131;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-title {
+  margin: 0px 0px 0px 20px;
+  width: 70px;
+  height: 30px;
+  color: #f8f8fb;
+  font-size: 20px;
+  font-weight: 400;
+}
+.menu-icon {
+  height: 15px;
+  width: auto;
+  margin: 0px 20px 0px 0px;
+}
+.navbar-contenido-close {
+  background-color: #313131;
+  visibility: hidden;
+  height: 0px;
+  transition: ease 0.5s;
+}
+.navbar-contenido {
+  background-color: #313131;
+  width: 100%;
+  height: 340px;
+  transition: ease 0.5s;
+}
+.navbar {
+  width: 100vw;
+  margin-top: 50px;
+}
+.nav-item {
+  width: auto;
+  height: 50px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  display: flex;
+}
+.item-img {
+  width: 24px;
+  height: 24px;
+  margin: 13px 28px 13px 28px;
+}
+
+.item-text {
+  position: absolute;
+  opacity: 1;
+  color: #f8f8fb;
+  width: auto;
+  text-align: center;
+  left: 75px;
+  margin: 13px auto 13px 0px;
+  overflow: hidden;
+  transition: ease 0.05s;
+}
+
+.fix-logo {
+  position: relative;
+  height: 90px;
+  width: 80px;
+}
+
+@media (min-width: 500px) {
+  .linea-side {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #fd611a;
+    box-shadow: 1px 0px 2px 2px rgba(253, 97, 26, 0.25);
+  }
+  .menu {
+    display: none;
+  }
+  .navbar {
+    margin: 10px 0px 0px 0px;
     position: fixed;
-    width: auto;
-    height: auto;
+    width: 80px;
+    height: 100vh;
+    z-index: 5;
+  }
+
+  .navbar-contenido-close {
+    position: fixed;
+    background-color: #313131;
+    visibility: visible;
+    transition: ease 0.5s;
+  }
+  .navbar-container {
+    position: fixed;
+    width: 80px;
+    height: 100%;
     z-index: 3;
-    
-    transition: ease .2s;
+    background-color: #313131;
+
+    transition: ease 0.1s;
     user-select: none;
     overflow: hidden;
-}
-.active{
-    background: #F8F8FB;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
-}
-.menu{
-    position: fixed;
-    width: 100%;
-    height: 40px;
-    top: 100px;
-    z-index: 5;
-    background-color: #313131;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.menu-title{
-    margin: 0px 0px 0px 20px;
-    width: 70px;
-    height: 30px;
-    color: #F8F8FB;
-    font-size: 20px;
-    font-weight: 400;
-}
-.menu-icon{
-    height: 15px;
-    width: auto;
-    margin: 0px 20px 0px 0px;
-}
-.navbar-contenido-close{
-    background-color: #313131;
+  }
+  .item-text {
     visibility: hidden;
-    height: 0px;
-    transition: ease .5s;
-}
-.navbar-contenido{
+    width: auto;
+    opacity: 0;
+    border-radius: 5px;
+    padding: 6px 10px;
+    margin: 10px 0px;
+    transition: ease 0.5s;
+    left: 70px;
+    white-space: nowrap;
+    color: #313131;
+  }
+
+  .i1:hover .item-text {
+    width: auto;
+    visibility: visible;
+    opacity: 1;
+    transition: ease 0.5s;
+    left: 85px;
+    white-space: nowrap;
     background-color: #313131;
-    width: 100%;
-    height: 460px;
-    transition: ease .5s;
-}
-.navbar{
-    width: 100vw;
-    height: 460px;
-    margin-top: 50px;
-}
-.nav-item{
+    color: #ffffff;
+  }
+  .i2:hover .item-text {
     width: auto;
-    height: 50px;
-    margin-bottom: 5px;
-    cursor: pointer;
-    display: flex;
-}
-.nav-item:hover .item-text{
-    text-decoration: underline #F8F8FB;
-}
-.item-img{
-    width: 24px;
-    height: 24px;
-    margin: 13px 28px 13px 28px;
-}
-
-.active .item-img{
-    width: 24px;
-    height: 24px;
-    margin: 13px 28px 13px 25px;
-}
-.item-text{
-    position: absolute;
+    visibility: visible;
     opacity: 1;
-    color: #F8F8FB;
+    transition: ease 0.5s;
+    left: 85px;
+    white-space: nowrap;
+    background-color: #313131;
+    color: #ffffff;
+  }
+  .i3:hover .item-text {
     width: auto;
-    text-align: center;
-    left: 75px;
-    margin: 13px auto 13px 0px;
-    overflow: hidden;
-    transition: ease .05s;
-}
-.active .item-text{
-    position: absolute;
+    visibility: visible;
     opacity: 1;
-    color: black;
+    transition: ease 0.5s;
+    left: 85px;
+    white-space: nowrap;
+    background-color: #313131;
+    color: #ffffff;
+  }
+  .i4:hover .item-text {
     width: auto;
-    left: 75px;
-    margin: 13px 0px 13px 0px;
-    overflow: hidden;
-    transition: ease .5s;
-}
-
-.fix-logo{
-    position: relative;
-    height: 90px;
-    width: 80px;
-}
-
-@media (min-width:500px){
-    .linea-side{
-        position: absolute;
-        width: 1px;
-        height: 100%;
-        background-color: #FD611A;
-        box-shadow: 1px 0px 2px 2px rgba(253, 97, 26, 0.25);
-    }
-    .menu{
-        display: none;
-    }
-    .navbar{
-        margin: 10px 0px 0px 0px;
-        position: fixed;
-        width: 80px;
-        height: 100vh;
-        z-index: 5;
-    }
-    
-    .navbar-contenido-close{
-        position: fixed;
-        background-color: #313131;
-        visibility: visible;
-        transition: ease .5s;
-    }
-    .navbar-container{
-        position: fixed;
-        width: 80px;
-        height: 100%;
-        z-index: 3;
-        background-color: #313131;
-        
-        transition: ease .1s;
-        user-select: none;
-        overflow: hidden;
-    }
-    .item-text{
-        visibility: hidden;
-        width: 1px;
-        opacity: 0;
-        transition: ease .1s;
-        left: 100px;
-    }
-    
-    .navbar-container:hover{
-        width: 250px;
-    }
-    .navbar-container:hover .item-text{
-        width: 150px;
-        visibility: visible;
-        opacity: 1;
-        transition: ease .1s;
-        left: 75px;
-    }
-    .active .item-text{
-        position: absolute;
-        opacity: 0;
-        color: black;
-        width: 1px;
-        left: 100px;
-        margin: 13px 0px 13px 0px;
-        overflow: hidden;
-        transition: ease .1s;
-    }
-    .navbar-container .active {
-        width: 80px;
-        background-color: white;
-        
-    }
-    .navbar-container:hover .active {
-        width: 250px;
-        background-color: white;
-        transition: ease .1s;
-    }
+    visibility: visible;
+    opacity: 1;
+    transition: ease 0.5s;
+    left: 85px;
+    white-space: nowrap;
+    background-color: #313131;
+    color: #ffffff;
+  }
+  .i5:hover .item-text {
+    width: auto;
+    visibility: visible;
+    opacity: 1;
+    transition: ease 0.5s;
+    left: 85px;
+    white-space: nowrap;
+    background-color: #313131;
+    color: #ffffff;
+  }
+  .i6:hover .item-text {
+    width: auto;
+    visibility: visible;
+    opacity: 1;
+    transition: ease 0.5s;
+    left: 85px;
+    white-space: nowrap;
+    background-color: #313131;
+    color: #ffffff;
+  }
+  .i7:hover .item-text {
+    width: auto;
+    visibility: visible;
+    opacity: 1;
+    transition: ease 0.5s;
+    left: 85px;
+    white-space: nowrap;
+    background-color: #313131;
+    color: #ffffff;
+  }
+  .i8:hover .item-text {
+    width: auto;
+    visibility: visible;
+    opacity: 1;
+    transition: ease 0.5s;
+    left: 85px;
+    white-space: nowrap;
+    background-color: #313131;
+    color: #ffffff;
+  }
 }

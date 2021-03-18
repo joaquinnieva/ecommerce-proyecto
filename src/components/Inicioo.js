@@ -6,7 +6,6 @@ import Slider from './Slider';
 function Inicio () {
     return(
         <div className="cont-page">
-            <div className="fix-page"></div>
         <Slider />
         </div>
     )

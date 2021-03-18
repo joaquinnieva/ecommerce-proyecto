@@ -1,5 +1,5 @@
 import React from "react";
-import MarcasCard from "../components/MarcasCard";
+import MarcasCards from "../components/MarcasCards";
 import NavbarSide from "../components/NavbarSide";
 import NavbarTop from "../components/NavbarTop";
 import Footer from "../components/Footer";
@@ -9,7 +9,7 @@ function MarcasSponsor() {
     <>
       <NavbarSide />
       <NavbarTop />
-      <MarcasCard />
+      <MarcasCards />
       <Footer />
     </>
   );
