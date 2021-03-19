@@ -52,10 +52,6 @@
 .contac3 {
   grid-column-start: 3;
   border-right: 1px solid white;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
 }
 
 .contac4 {
@@ -64,9 +60,11 @@
   flex-wrap: wrap;
   flex-direction: column;
 }
-.imgdata {
-  position: relative;
-  width: 50px;
+.contact-ayuda {
+  cursor: pointer;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
 }
 .copy-footer {
   width: 100%;

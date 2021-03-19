@@ -30,18 +30,10 @@ function NavbarSide () {
                     <img className="item-img" src={Images.productos} />
                     <div className="item-text">Productos</div>
                 </a>
-                {/* <a className="nav-item i3" href="/arma-tu-pc" >
-                    <img className="item-img" src={Images.armatupc} />
-                    <div className="item-text">Armá tu PC</div>
-                </a> */}
-                <a className="nav-item i4" href="/encontra-tu-pc" >
-                    <img className="item-img" src={Images.encontratupc} />
-                    <div className="item-text">Encontrá tu PC</div>
-                </a>
-                {/* <a className="nav-item i5" href="/mi-cuenta">
+                <a className="nav-item i5" href="/mi-cuenta">
                     <img className="item-img" src={Images.cuenta} />
                     <div className="item-text">Mi cuenta</div>
-                </a> */}
+                </a>
                 <a className="nav-item i6" href="/ayuda" >
                     <img className="item-img" src={Images.ayuda} />
                     <div className="item-text">Ayuda</div>
@@ -49,10 +41,6 @@ function NavbarSide () {
                 <a className="nav-item i7" href="/marcas-sponsor" >
                     <img className="item-img" src={Images.sponsor} />
                     <div className="item-text">Marcas sponsor</div>
-                </a>
-                <a className="nav-item i8" href="/gamer-coins" >
-                    <img className="item-img" src={Images.coins} />
-                    <div className="item-text">Gamer Coins</div>
                 </a>
             </nav>
         </div>
