@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/ecommerce.proyecto%20/static/css/main.2327b58c.chunk.css",
-    "main.js": "/ecommerce.proyecto%20/static/js/main.ea78d729.chunk.js",
-    "main.js.map": "/ecommerce.proyecto%20/static/js/main.ea78d729.chunk.js.map",
-    "runtime-main.js": "/ecommerce.proyecto%20/static/js/runtime-main.43556433.js",
-    "runtime-main.js.map": "/ecommerce.proyecto%20/static/js/runtime-main.43556433.js.map",
-    "static/js/2.259e7d83.chunk.js": "/ecommerce.proyecto%20/static/js/2.259e7d83.chunk.js",
-    "static/js/2.259e7d83.chunk.js.map": "/ecommerce.proyecto%20/static/js/2.259e7d83.chunk.js.map",
-    "static/js/3.68065a90.chunk.js": "/ecommerce.proyecto%20/static/js/3.68065a90.chunk.js",
-    "static/js/3.68065a90.chunk.js.map": "/ecommerce.proyecto%20/static/js/3.68065a90.chunk.js.map",
+    "main.js": "/ecommerce.proyecto%20/static/js/main.c3c4758f.chunk.js",
+    "main.js.map": "/ecommerce.proyecto%20/static/js/main.c3c4758f.chunk.js.map",
+    "runtime-main.js": "/ecommerce.proyecto%20/static/js/runtime-main.50882fe7.js",
+    "runtime-main.js.map": "/ecommerce.proyecto%20/static/js/runtime-main.50882fe7.js.map",
+    "static/js/2.cd114606.chunk.js": "/ecommerce.proyecto%20/static/js/2.cd114606.chunk.js",
+    "static/js/2.cd114606.chunk.js.map": "/ecommerce.proyecto%20/static/js/2.cd114606.chunk.js.map",
+    "static/js/3.a74df744.chunk.js": "/ecommerce.proyecto%20/static/js/3.a74df744.chunk.js",
+    "static/js/3.a74df744.chunk.js.map": "/ecommerce.proyecto%20/static/js/3.a74df744.chunk.js.map",
     "index.html": "/ecommerce.proyecto%20/index.html",
     "static/css/main.2327b58c.chunk.css.map": "/ecommerce.proyecto%20/static/css/main.2327b58c.chunk.css.map",
-    "static/js/2.259e7d83.chunk.js.LICENSE.txt": "/ecommerce.proyecto%20/static/js/2.259e7d83.chunk.js.LICENSE.txt",
+    "static/js/2.cd114606.chunk.js.LICENSE.txt": "/ecommerce.proyecto%20/static/js/2.cd114606.chunk.js.LICENSE.txt",
     "static/media/1.bde882bb.jpg": "/ecommerce.proyecto%20/static/media/1.bde882bb.jpg",
     "static/media/10.f6bfe39a.jpg": "/ecommerce.proyecto%20/static/media/10.f6bfe39a.jpg",
     "static/media/11.cc3f92bc.jpg": "/ecommerce.proyecto%20/static/media/11.cc3f92bc.jpg",
@@ -48,9 +48,9 @@
     "static/media/zotac.017ad70d.svg": "/ecommerce.proyecto%20/static/media/zotac.017ad70d.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.43556433.js",
-    "static/js/2.259e7d83.chunk.js",
+    "static/js/runtime-main.50882fe7.js",
+    "static/js/2.cd114606.chunk.js",
     "static/css/main.2327b58c.chunk.css",
-    "static/js/main.ea78d729.chunk.js"
+    "static/js/main.c3c4758f.chunk.js"
   ]
 }
