@@ -22,11 +22,11 @@ function NavbarSide () {
             <div className={click ? "navbar-contenido-close" : "navbar-contenido"}>
 
             <nav className="navbar">
-                <a className="nav-item i1" href="/ecommerce.proyecto/inicio">
+                <a className="nav-item i1" href="/inicio">
                     <img className="item-img" src={Images.inicio} />
                     <div className="item-text">Inicio</div>
                 </a>
-                <a className="nav-item i2" href="/ecommerce.proyecto/productos">
+                <a className="nav-item i2" href="/productos">
                     <img className="item-img" src={Images.productos} />
                     <div className="item-text">Productos</div>
                 </a>
@@ -34,7 +34,7 @@ function NavbarSide () {
                     <img className="item-img" src={Images.armatupc} />
                     <div className="item-text">Armá tu PC</div>
                 </a> */}
-                <a className="nav-item i4" href="/ecommerce.proyecto/encontra-tu-pc" >
+                <a className="nav-item i4" href="/encontra-tu-pc" >
                     <img className="item-img" src={Images.encontratupc} />
                     <div className="item-text">Encontrá tu PC</div>
                 </a>
@@ -42,15 +42,15 @@ function NavbarSide () {
                     <img className="item-img" src={Images.cuenta} />
                     <div className="item-text">Mi cuenta</div>
                 </a> */}
-                <a className="nav-item i6" href="/ecommerce.proyecto/ayuda" >
+                <a className="nav-item i6" href="/ayuda" >
                     <img className="item-img" src={Images.ayuda} />
                     <div className="item-text">Ayuda</div>
                 </a>
-                <a className="nav-item i7" href="/ecommerce.proyecto/marcas-sponsor" >
+                <a className="nav-item i7" href="/marcas-sponsor" >
                     <img className="item-img" src={Images.sponsor} />
                     <div className="item-text">Marcas sponsor</div>
                 </a>
-                <a className="nav-item i8" href="/ecommerce.proyecto/gamer-coins" >
+                <a className="nav-item i8" href="/gamer-coins" >
                     <img className="item-img" src={Images.coins} />
                     <div className="item-text">Gamer Coins</div>
                 </a>
