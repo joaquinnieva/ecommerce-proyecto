@@ -4,7 +4,8 @@ import {
   Switch,
   Route,
   BrowserRouter,
-  Redirect
+  Redirect,
+  HashRouter
 } from "react-router-dom";
 
 import NavbarSide from './components/NavbarSide';
@@ -22,9 +23,10 @@ import GamerCoins from "./pages/GamerCoins";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Route exact path="/" component={Inicio} />
+    <HashRouter>
+    
       <Switch>
+        
         <Route exact path="/productos" component={Productos} />
         <Route exact path="/arma-tu-pc" component={ArmaTuPc} />
         <Route exact path="/encontra-tu-pc" component={EncontraTuPc} />
@@ -32,9 +34,10 @@ function App() {
         <Route exact path="/ayuda" component={Ayuda} />
         <Route exact path="/marcas-sponsor" component={MarcasSponsor} />
         <Route exact path="/gamer-coins" component={GamerCoins} />
-
+        
       </Switch>
-    </BrowserRouter>
+      <Route exact path="/" exact render={props => <Inicio/>} />
+    </HashRouter>
   );
 }
 

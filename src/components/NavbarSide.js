@@ -22,23 +22,23 @@ function NavbarSide () {
             <div className={click ? "navbar-contenido-close" : "navbar-contenido"}>
 
             <nav className="navbar">
-                <a className="nav-item i1" href="/">
+                <a className="nav-item i1" href="#/">
                     <img className="item-img" src={Images.inicio} />
                     <div className="item-text">Inicio</div>
                 </a>
-                <a className="nav-item i2" href="/productos">
+                <a className="nav-item i2" href="#/productos">
                     <img className="item-img" src={Images.productos} />
                     <div className="item-text">Productos</div>
                 </a>
-                <a className="nav-item i5" href="/mi-cuenta">
+                <a className="nav-item i5" href="#/mi-cuenta">
                     <img className="item-img" src={Images.cuenta} />
                     <div className="item-text">Mi cuenta</div>
                 </a>
-                <a className="nav-item i6" href="/ayuda" >
+                <a className="nav-item i6" href="#/ayuda" >
                     <img className="item-img" src={Images.ayuda} />
                     <div className="item-text">Ayuda</div>
                 </a>
-                <a className="nav-item i7" href="/marcas-sponsor" >
+                <a className="nav-item i7" href="#/marcas-sponsor" >
                     <img className="item-img" src={Images.sponsor} />
                     <div className="item-text">Marcas sponsor</div>
                 </a>

@@ -60,25 +60,7 @@ const Slideshow = ({
 		}
 	}
 
-	useEffect(() => {
-		if(autoplay){
-			intervaloSlideshow.current = setInterval(() => {
-				siguiente();
-			}, intervalo);
-	
-		
-			slideshow.current.addEventListener('mouseenter', () => {
-				clearInterval(intervaloSlideshow.current);
-			});
-	
-		
-			slideshow.current.addEventListener('mouseleave', () => {
-				intervaloSlideshow.current = setInterval(() => {
-					siguiente();
-				}, intervalo);
-			});
-		}
-	}, [autoplay, intervalo, siguiente]);
+
 
 	return (
 		<ContenedorPrincipal>
