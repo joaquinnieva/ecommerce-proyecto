@@ -16,7 +16,6 @@ const Slideshow = ({
 	const siguiente = useCallback(() => {
 		
 		if(slideshow.current.children.length > 0){
-			console.log('Siguiente')
 
 			const primerElemento = slideshow.current.children[0];
 
@@ -44,7 +43,6 @@ const Slideshow = ({
 	}, [velocidad]);
 	
 	const anterior = () => {
-		console.log('Anterior');
 		if(slideshow.current.children.length > 0){
 		
 			const index = slideshow.current.children.length - 1;
@@ -101,7 +99,7 @@ const Slideshow = ({
 
 const ContenedorPrincipal = styled.div`
 	position: relative;
-	margin: 15px 10px;
+	margin: 55px 5px;
 	overflow:hidden;
 	user-select: none;
 `;
