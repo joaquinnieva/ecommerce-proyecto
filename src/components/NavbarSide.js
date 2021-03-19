@@ -22,7 +22,7 @@ function NavbarSide () {
             <div className={click ? "navbar-contenido-close" : "navbar-contenido"}>
 
             <nav className="navbar">
-                <a className="nav-item i1" href="/inicio">
+                <a className="nav-item i1" href="/">
                     <img className="item-img" src={Images.inicio} />
                     <div className="item-text">Inicio</div>
                 </a>
