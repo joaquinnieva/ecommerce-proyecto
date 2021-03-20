@@ -7,22 +7,22 @@ function MarcasCards() {
     <div className="cont-page">
       <div className="cardmarcas-cont">
         <div className="card marcas1">
-          <img className="card-img" src={Images.hyperx} />
+          <img className="card-img" src={Images.nike} />
         </div>
         <div className="card marcas2">
-          <img className="card-img" src={Images.zotac} />
+          <img className="card-img" src={Images.adidas} />
         </div>
         <div className="card marcas3">
-          <img className="card-img" src={Images.asus} />
+          <img className="card-img" src={Images.vans} />
         </div>
         <div className="card marcas4">
-          <img className="card-img" src={Images.seagate} />
+          <img className="card-img" src={Images.reebok} />
         </div>
         <div className="card marcas5">
-          <img className="card-img" src={Images.mnvidia} />
+          <img className="card-img" src={Images.puma} />
         </div>
         <div className="card marcas6">
-          <img className="card-img" src={Images.amd} />
+          <img className="card-img" src={Images.dc} />
         </div>
       </div>
     </div>

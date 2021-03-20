@@ -28,15 +28,15 @@
   width: 250px;
 }
 .marcas1 {
-  background: #414141;
+  background: #4f7c78;
   grid-area: card1;
 }
 .marcas2 {
-  background: #fff347;
+  background: #3667af;
   grid-area: card2;
 }
 .marcas3 {
-  background: #000000;
+  background: #888888;
   grid-area: card3;
 }
 .marcas4 {
@@ -44,7 +44,7 @@
   grid-area: card4;
 }
 .marcas5 {
-  background: #9b9b9b;
+  background: #7ee2bf;
   grid-area: card5;
 }
 .marcas6 {
