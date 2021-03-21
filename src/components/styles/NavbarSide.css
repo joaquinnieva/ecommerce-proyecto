@@ -43,7 +43,7 @@
 .navbar-contenido {
   background-color: #313131;
   width: 100%;
-  height: 340px;
+  height: 270px;
   transition: ease 0.5s;
 }
 .navbar {
@@ -56,6 +56,9 @@
   margin-bottom: 5px;
   cursor: pointer;
   display: flex;
+}
+.nav-item:hover {
+  background-color: #373737;
 }
 .item-img {
   width: 24px;
@@ -85,6 +88,7 @@
   .linea-side {
     position: absolute;
     width: 1px;
+    z-index: 10;
     height: 100%;
     background-color: #fd611a;
     box-shadow: 1px 0px 2px 2px rgba(253, 97, 26, 0.25);
@@ -116,6 +120,9 @@
     transition: ease 0.1s;
     user-select: none;
     overflow: hidden;
+  }
+  .nav-item:hover {
+    background-color: #3d3d3d;
   }
   .item-text {
     visibility: hidden;

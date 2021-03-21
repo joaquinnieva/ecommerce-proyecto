@@ -8,7 +8,8 @@ function NavbarTop() {
     <>
       <div className="cont-logoecommerce">
         <a href="#/">
-          <img className="logoecommerce" src={Images.logoecommerce} />
+          <img className="logoecommerce1" src={Images.logoecommerce1} />
+          <img className="logoecommerce2" src={Images.logoecommerce2} />
         </a>
       </div>
       <div className="navbartop">

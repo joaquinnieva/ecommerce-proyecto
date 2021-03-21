@@ -3,7 +3,8 @@ import productos from '../components/img/iconos/productos.png';
 import cuenta from '../components/img/iconos/cuenta.png';
 import ayuda from '../components/img/iconos/ayuda.png';
 import sponsor from '../components/img/iconos/sponsor.png';
-import logoecommerce from '../components/img/logoecommerce.png';
+import logoecommerce1 from '../components/img/logoecommerce.png';
+import logoecommerce2 from '../components/img/logoecommerce2.png';
 import youtube from '../components/img/iconos/youtube.png';
 import instagram from '../components/img/iconos/instagram.png';
 import facebook from '../components/img/iconos/facebook.png';
@@ -30,7 +31,8 @@ export default
     "cuenta": cuenta,
     "ayuda": ayuda,
     "sponsor": sponsor,
-    "logoecommerce": logoecommerce,
+    "logoecommerce1": logoecommerce1,
+    "logoecommerce2": logoecommerce2,
     "youtube":youtube,
     "facebook":facebook,
     "instagram":instagram,

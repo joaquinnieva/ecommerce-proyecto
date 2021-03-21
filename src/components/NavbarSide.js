@@ -11,7 +11,7 @@ function NavbarSide () {
         <div className="navbar-container">
 
             <div className="menu" onClick={handleClick} >
-                <div className="menu-title">MENU</div>
+                <div className="menu-title">MENÚ</div>
                 <img className="menu-icon" src={Images.menu} />
             </div>
             

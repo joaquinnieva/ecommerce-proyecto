@@ -13,19 +13,28 @@
 }
 .cont-logoecommerce {
   position: fixed;
-  height: 90px;
+  height: 80px;
   width: 80px;
+  margin: 10px 0px auto 0px;
   z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   user-select: none;
 }
-.logoecommerce {
-  position: absolute;
+.logoecommerce1 {
+  position: relative;
   width: 40px;
   height: 40px;
-  margin: 25px auto auto 17px;
+}
+.logoecommerce2 {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: none;
 }
 .framefix {
-  width: 80px;
+  width: 50px;
   height: 80px;
 }
 .buscador {
@@ -52,20 +61,18 @@
   margin-left: 20px;
 }
 .carrito {
-  width: 80px;
+  width: 47px;
   height: 80px;
   margin: auto 30px auto 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  z-index: 5;
   user-select: none;
 }
 .carrito :hover {
-  width: 52px;
+  width: 45px;
 }
-
 @media (max-width: 500px) {
   .navbartop {
     position: fixed;
@@ -79,17 +86,30 @@
     user-select: none;
   }
   .carrito {
-    width: 100px;
-    height: 80px;
+    width: 47px;
     margin: 10px 0px auto 0px;
+  }
+  .cont-logoecommerce {
+    position: fixed;
+    height: 80px;
+    width: 60px;
+    margin: 10px 0px auto 0px;
+    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
   }
-  .logosolo {
-    position: absolute;
-    width: 50px;
-    height: 44px;
-    margin: 25px 5px auto 5px;
+  .logoecommerce1 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: none;
+  }
+  .logoecommerce2 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: block;
   }
 }
