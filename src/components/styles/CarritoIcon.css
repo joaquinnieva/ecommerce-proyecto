@@ -1,0 +1,21 @@
+.carritocompras{
+    width: 100%;
+    height: auto;
+}
+.carritocompras:hover{
+    width: 98%;
+    height: auto;
+    z-index: 2;
+}
+.carrito-numero{
+    position: absolute;
+    color: #ffffff;
+    background-color: #FD611A;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0px 7px;
+    border-radius: 100%;
+    top: 12px;
+    right: 40px;
+    user-select: none;
+}

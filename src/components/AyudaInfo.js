@@ -18,7 +18,7 @@ function AyudaInfo() {
         </p>
         <br />
         <p>
-          <b>Lorem ipsum dolor</b>
+          <b>Lorem ipsum dolor </b>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas
           maecenas pharetra convallis posuere morbi leo. Proin nibh nisl
@@ -28,7 +28,7 @@ function AyudaInfo() {
         </p>
         <br />
         <p>
-          <b>Lorem ipsum</b>
+          <b>Lorem ipsum </b>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas
           maecenas pharetra convallis posuere morbi leo. Proin nibh nisl

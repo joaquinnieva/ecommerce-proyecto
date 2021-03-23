@@ -1,5 +1,5 @@
 import React from "react";
-import Carrito from "./Carrito";
+import CarritoIcon from "./CarritoIcon";
 import Images from "./Images";
 import "./styles/NavbarTop.css";
 
@@ -22,7 +22,7 @@ function NavbarTop() {
         </div>
 
         <div className="carrito">
-          <Carrito />
+          <CarritoIcon />
         </div>
       </div>
     </>

@@ -69,10 +69,9 @@
   align-items: center;
   cursor: pointer;
   user-select: none;
+  z-index: 5;
 }
-.carrito :hover {
-  width: 45px;
-}
+
 @media (max-width: 500px) {
   .navbartop {
     position: fixed;

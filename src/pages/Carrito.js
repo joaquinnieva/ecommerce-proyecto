@@ -2,21 +2,20 @@ import React from "react";
 import NavbarSide from "../components/NavbarSide";
 import NavbarTop from "../components/NavbarTop";
 import Footer from "../components/Footer";
-import ProductosListado from "../components/ProductosListado";
+import CarritoItems from "../components/CarritoItems";
 import ProductosContext from "../components/context/ProductosContext";
 
-function Productos() {
+function Carrito() {
   return (
     <>
       <NavbarSide />
       <NavbarTop />
       <ProductosContext>
-        <ProductosListado />
+        <CarritoItems />
       </ProductosContext>
-
       <Footer />
     </>
   );
 }
 
-export default Productos;
+export default Carrito;
