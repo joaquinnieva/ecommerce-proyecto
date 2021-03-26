@@ -18,6 +18,7 @@ function NavbarTop() {
         <div className="buscador">
           <div className="buscador-ico-cont">
             <img className="buscador-ico" src={Images.buscador} />
+            <input placeholder="Buscar" type="text" className="buscar-input"></input>
           </div>
         </div>
 
