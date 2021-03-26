@@ -3,17 +3,15 @@ import NavbarSide from "../components/NavbarSide";
 import NavbarTop from "../components/NavbarTop";
 import Footer from "../components/Footer";
 import ProductosListado from "../components/ProductosListado";
-import ProductosContext from "../components/context/ProductosContext";
+import {Provider} from 'react-redux';
+import store from '../components/redux/store';
 
 function Productos() {
   return (
     <>
       <NavbarSide />
       <NavbarTop />
-      <ProductosContext>
-        <ProductosListado />
-      </ProductosContext>
-
+          <ProductosListado />
       <Footer />
     </>
   );

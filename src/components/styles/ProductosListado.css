@@ -43,8 +43,9 @@
   color: #313131;
 }
 .item-carrito {
-  background-color: #FD611A;
+  background-color: #313131;
   border-radius: 25px;
+  border: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,10 +58,13 @@
   width: 260px;
   height: 50px;
   color: #ffffff;
+  transition: ease .5s;
 }
 .item-carrito:hover {
-    background-color: #ff5100;
+    background-color: #FD611A;
+    transition: ease .5s;
 }
+
 
 @media (max-width: 500px) {
   .cont-page-prod {

@@ -3,6 +3,7 @@ import productos from '../components/img/iconos/productos.png';
 import cuenta from '../components/img/iconos/cuenta.png';
 import ayuda from '../components/img/iconos/ayuda.png';
 import sponsor from '../components/img/iconos/sponsor.png';
+import basura from '../components/img/iconos/basura.png';
 import logoecommerce1 from '../components/img/logoecommerce.png';
 import logoecommerce2 from '../components/img/logoecommerce2.png';
 import youtube from '../components/img/iconos/youtube.png';
@@ -51,4 +52,5 @@ export default
     "puma":puma,
     "vans":vans,
     "dc":dc,
+    "basura": basura,
     }
