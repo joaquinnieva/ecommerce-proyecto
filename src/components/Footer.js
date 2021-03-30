@@ -11,7 +11,7 @@ function Footer() {
         </div>
 
         <div className="contactame contac2">
-          <h3><a href="/ayuda" className="contact-ayuda">AYUDA</a></h3>
+          <h3><a href="#/ayuda" className="contact-ayuda">AYUDA</a></h3>
         </div>
 
         <div className="contactame contac3">
@@ -21,10 +21,10 @@ function Footer() {
         <div className="contactame contac4">
           <h3>SEGUINOS EN:</h3>
           <div className="img-cont-footer">
-            <a href="#" target="_blank"><img className="imgfooter" src={Images.twitter} /></a>
-            <a href="#" target="_blank"><img className="imgfooter" src={Images.instagram} /></a>
-            <a href="#" target="_blank"><img className="imgfooter" src={Images.facebook} /></a>
-            <a href="#" target="_blank"><img className="imgfooter" src={Images.youtube} /></a>
+            <a href="#"><img className="imgfooter" src={Images.twitter} /></a>
+            <a href="#"><img className="imgfooter" src={Images.instagram} /></a>
+            <a href="#"><img className="imgfooter" src={Images.facebook} /></a>
+            <a href="#"><img className="imgfooter" src={Images.youtube} /></a>
           </div>
         </div>
 

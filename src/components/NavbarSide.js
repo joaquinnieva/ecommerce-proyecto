@@ -27,10 +27,6 @@ function NavbarSide() {
             <img className="item-img" src={Images.productos} />
             <div className="item-text">Productos</div>
           </a>
-          <a className="nav-item i5" href="#/mi-cuenta">
-            <img className="item-img" src={Images.cuenta} />
-            <div className="item-text">Mi cuenta</div>
-          </a>
           <a className="nav-item i6" href="#/ayuda">
             <img className="item-img" src={Images.ayuda} />
             <div className="item-text">Ayuda</div>

@@ -8,7 +8,6 @@ import {
 
 import Inicio from './pages/Inicio';
 import Productos from "./pages/Productos";
-import MiCuenta from "./pages/MiCuenta";
 import Ayuda from "./pages/Ayuda";
 import MarcasSponsor from "./pages/MarcasSponsor";
 import Carrito from "./pages/Carrito";
@@ -19,7 +18,6 @@ function Pages() {
     
       <Switch>
         <Route exact path="/productos" component={Productos} />
-        <Route exact path="/mi-cuenta" component={MiCuenta} />
         <Route exact path="/ayuda" component={Ayuda} />
         <Route exact path="/marcas-sponsor" component={MarcasSponsor} />
         <Route exact path="/carrito" component={Carrito} /> 
