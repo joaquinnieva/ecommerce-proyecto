@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/ecommerce-proyecto/static/css/main.e0193ab0.chunk.css",
-    "main.js": "/ecommerce-proyecto/static/js/main.c7df4b7e.chunk.js",
-    "main.js.map": "/ecommerce-proyecto/static/js/main.c7df4b7e.chunk.js.map",
+    "main.css": "/ecommerce-proyecto/static/css/main.a3f1bec3.chunk.css",
+    "main.js": "/ecommerce-proyecto/static/js/main.f53bc06c.chunk.js",
+    "main.js.map": "/ecommerce-proyecto/static/js/main.f53bc06c.chunk.js.map",
     "runtime-main.js": "/ecommerce-proyecto/static/js/runtime-main.75492e0a.js",
     "runtime-main.js.map": "/ecommerce-proyecto/static/js/runtime-main.75492e0a.js.map",
     "static/js/2.e76905e6.chunk.js": "/ecommerce-proyecto/static/js/2.e76905e6.chunk.js",
@@ -10,20 +10,20 @@
     "static/js/3.52a022c8.chunk.js": "/ecommerce-proyecto/static/js/3.52a022c8.chunk.js",
     "static/js/3.52a022c8.chunk.js.map": "/ecommerce-proyecto/static/js/3.52a022c8.chunk.js.map",
     "index.html": "/ecommerce-proyecto/index.html",
-    "static/css/main.e0193ab0.chunk.css.map": "/ecommerce-proyecto/static/css/main.e0193ab0.chunk.css.map",
+    "static/css/main.a3f1bec3.chunk.css.map": "/ecommerce-proyecto/static/css/main.a3f1bec3.chunk.css.map",
     "static/js/2.e76905e6.chunk.js.LICENSE.txt": "/ecommerce-proyecto/static/js/2.e76905e6.chunk.js.LICENSE.txt",
-    "static/media/add1.a1d75d8c.jpg": "/ecommerce-proyecto/static/media/add1.a1d75d8c.jpg",
-    "static/media/add2.563a7897.jpg": "/ecommerce-proyecto/static/media/add2.563a7897.jpg",
-    "static/media/add3.3698abbc.jpg": "/ecommerce-proyecto/static/media/add3.3698abbc.jpg",
-    "static/media/add4.ddf50c49.jpg": "/ecommerce-proyecto/static/media/add4.ddf50c49.jpg",
-    "static/media/add5.65012e16.jpg": "/ecommerce-proyecto/static/media/add5.65012e16.jpg",
+    "static/media/add1.db7b50bb.jpg": "/ecommerce-proyecto/static/media/add1.db7b50bb.jpg",
+    "static/media/add2.328f2505.jpg": "/ecommerce-proyecto/static/media/add2.328f2505.jpg",
+    "static/media/add3.dca07755.jpg": "/ecommerce-proyecto/static/media/add3.dca07755.jpg",
+    "static/media/add4.a82c6301.jpg": "/ecommerce-proyecto/static/media/add4.a82c6301.jpg",
+    "static/media/add5.564660a2.jpg": "/ecommerce-proyecto/static/media/add5.564660a2.jpg",
     "static/media/adidas.596e911e.svg": "/ecommerce-proyecto/static/media/adidas.596e911e.svg",
     "static/media/dc.ea8523b3.svg": "/ecommerce-proyecto/static/media/dc.ea8523b3.svg",
     "static/media/icono-derecha.b282d2fc.svg": "/ecommerce-proyecto/static/media/icono-derecha.b282d2fc.svg",
     "static/media/icono-izquierda.b74b51c4.svg": "/ecommerce-proyecto/static/media/icono-izquierda.b74b51c4.svg",
-    "static/media/nike-sb-dunk.be2b6e7b.png": "/ecommerce-proyecto/static/media/nike-sb-dunk.be2b6e7b.png",
-    "static/media/nike-snkrs1.7ead606d.png": "/ecommerce-proyecto/static/media/nike-snkrs1.7ead606d.png",
-    "static/media/nike-snkrs2.1bb44941.png": "/ecommerce-proyecto/static/media/nike-snkrs2.1bb44941.png",
+    "static/media/nike-sb-dunk.bc44445e.png": "/ecommerce-proyecto/static/media/nike-sb-dunk.bc44445e.png",
+    "static/media/nike-snkrs1.e574bff6.png": "/ecommerce-proyecto/static/media/nike-snkrs1.e574bff6.png",
+    "static/media/nike-snkrs2.540662f5.png": "/ecommerce-proyecto/static/media/nike-snkrs2.540662f5.png",
     "static/media/nike.7f708f00.svg": "/ecommerce-proyecto/static/media/nike.7f708f00.svg",
     "static/media/puma.17358546.svg": "/ecommerce-proyecto/static/media/puma.17358546.svg",
     "static/media/reebok.90f44d24.svg": "/ecommerce-proyecto/static/media/reebok.90f44d24.svg",
@@ -32,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.75492e0a.js",
     "static/js/2.e76905e6.chunk.js",
-    "static/css/main.e0193ab0.chunk.css",
-    "static/js/main.c7df4b7e.chunk.js"
+    "static/css/main.a3f1bec3.chunk.css",
+    "static/js/main.f53bc06c.chunk.js"
   ]
 }
