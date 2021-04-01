@@ -1,4 +1,4 @@
-import React, {useRef, useEffect, useCallback} from 'react';
+import React, {useRef, useCallback} from 'react';
 import {ReactComponent as FlechaIzquierda} from './img/iconos/icono-izquierda.svg';
 import {ReactComponent as FlechaDerecha} from './img/iconos/icono-derecha.svg';
 import styled from 'styled-components';
@@ -6,12 +6,10 @@ import styled from 'styled-components';
 const Slideshow = ({
 		children,
 		controles = false,
-		autoplay = false,
-		velocidad="500",
-		intervalo="5000"
+		velocidad="500"
 	}) => {
 	const slideshow = useRef(null);
-	const intervaloSlideshow = useRef(null);
+
 
 	const siguiente = useCallback(() => {
 		

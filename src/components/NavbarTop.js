@@ -4,12 +4,17 @@ import Images from "./Images";
 import "./styles/NavbarTop.css";
 
 function NavbarTop() {
+
+  const handleCategory = (e) => {
+    console.log(e.target.value)
+  }
+
   return (
     <>
       <div className="cont-logoecommerce">
         <a href="#/">
-          <img className="logoecommerce1" src={Images.logoecommerce1} />
-          <img className="logoecommerce2" src={Images.logoecommerce2} />
+          <img className="logoecommerce1" src={Images.logoecommerce1} alt="logo"/>
+          <img className="logoecommerce2" src={Images.logoecommerce2} alt="logo"/>
         </a>
       </div>
       <div className="navbartop">
@@ -17,8 +22,13 @@ function NavbarTop() {
 
         <div className="buscador">
           <div className="buscador-ico-cont">
-            <img className="buscador-ico" src={Images.buscador} />
-            <input placeholder="Buscar" type="text" className="buscar-input"></input>
+            <img className="buscador-ico" src={Images.buscador} alt="buscador" />
+            <input
+              placeholder="Buscar"
+              type="text"
+              className="buscar-input"
+              onChange={handleCategory}
+            ></input>
           </div>
         </div>
 

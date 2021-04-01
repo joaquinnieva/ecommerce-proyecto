@@ -9,7 +9,7 @@ function CarritoIcon({elegidos}) {
     <>
       <a href="#/carrito">
         <div className="carrito-numero">{elegidos.length}</div>
-        <img className="carritocompras" src={Images.carrito} />
+        <img className="carritocompras" src={Images.carrito} alt="icon"/>
       </a>
     </>
   );

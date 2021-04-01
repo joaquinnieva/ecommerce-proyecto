@@ -20,11 +20,11 @@ function Footer() {
 
         <div className="contactame contac4">
           <h3>SEGUINOS EN:</h3>
-          <div className="img-cont-footer">
-            <a href="#"><img className="imgfooter" src={Images.twitter} /></a>
-            <a href="#"><img className="imgfooter" src={Images.instagram} /></a>
-            <a href="#"><img className="imgfooter" src={Images.facebook} /></a>
-            <a href="#"><img className="imgfooter" src={Images.youtube} /></a>
+          <div className="img-cont-footer">{/*eslint-disable-next-line*/}
+            <a href="#"><img className="imgfooter" src={Images.twitter}  alt="icon"/></a>{/*eslint-disable-next-line*/}
+            <a href="#"><img className="imgfooter" src={Images.instagram}  alt="icon"/></a>{/*eslint-disable-next-line*/}
+            <a href="#"><img className="imgfooter" src={Images.facebook} alt="icon" /></a>{/*eslint-disable-next-line*/}
+            <a href="#"><img className="imgfooter" src={Images.youtube}  alt="icon"/></a>
           </div>
         </div>
 

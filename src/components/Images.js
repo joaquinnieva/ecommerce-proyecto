@@ -25,6 +25,7 @@ import reebok from '../components/img/marcas/reebok.svg';
 import puma from '../components/img/marcas/puma.svg';
 import vans from '../components/img/marcas/vans.svg';
 
+// eslint-disable-next-line
 export default
     {
     "inicio": inicio,

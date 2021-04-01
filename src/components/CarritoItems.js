@@ -11,11 +11,11 @@ function CarritoItems({ elegidos, borrarElegido }) {
         {elegidos.map((producto) => (
           <div className="carrito-item" key={producto.id}>
             <div className="carrito-info">
-            <img src={producto.image} className="carrito-img" />
+            <img src={producto.image} className="carrito-img" alt="icon"/>
               <div className="carrito-name"> {producto.name} </div>
               <div className="carrito-price"> {producto.price} </div>
             </div>
-            <button className="carrito-borrar"  onClick={() => borrarElegido(producto)}> <img src={Images.basura} /> </button>
+            <button className="carrito-borrar"  onClick={() => borrarElegido(producto)}> <img src={Images.basura} alt="icon" /> </button>
           </div>
         ))}
       </div>
