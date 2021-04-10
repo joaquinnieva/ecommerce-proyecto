@@ -2,18 +2,10 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 import "./styles/ProductosListado.css";
 
-function ProductosListado({
-  productos,
-  agregarElegido,
-  categorias,
-  categorizar1,
-  categorizar2,
-  categorizar3,
-  sinCategoria,
-}) {
+function ProductosListado({ productos, agregarElegido, busqueda }) {
   const [click, setClick] = useState(true);
   const handleClick = () => setClick(!click);
-
+  
   return (
     <div className="cont-page-prod">
       {/* <div
@@ -57,7 +49,7 @@ function ProductosListado({
           <div className="producto-item" key={producto.name}>
             <img src={producto.image} className="item-imagen" alt="producto" />
             <div className="item-name"> {producto.name} </div>
-            <div className="item-price"> {producto.price} </div>
+            <div className="item-price">$ {producto.price} </div>
             <button
               className="item-carrito"
               onClick={() => agregarElegido(producto)}

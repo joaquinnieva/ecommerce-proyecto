@@ -2,11 +2,11 @@ import React from "react";
 import CarritoIcon from "./CarritoIcon";
 import Images from "./Images";
 import "./styles/NavbarTop.css";
+import { connect } from "react-redux";
 
-function NavbarTop() {
-
-  const handleCategory = (e) => {
-    console.log(e.target.value)
+function NavbarTop({busqueda, productos}) {
+  const handleChange= e =>{
+    busqueda= e.target.value
   }
 
   return (
@@ -27,7 +27,7 @@ function NavbarTop() {
               placeholder="Buscar"
               type="text"
               className="buscar-input"
-              onChange={handleCategory}
+              onChange={handleChange}
             ></input>
           </div>
         </div>
@@ -40,4 +40,14 @@ function NavbarTop() {
   );
 }
 
-export default NavbarTop;
+
+const mapStateToProps = (state) => ({
+  productos: state.productos,
+  busqueda: state.busqueda,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+
+    });
+
+export default connect(mapStateToProps, mapDispatchToProps)(NavbarTop);

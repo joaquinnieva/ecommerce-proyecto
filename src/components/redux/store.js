@@ -11,47 +11,28 @@ const initialState = {
       name: "Nike SB Dunk",
       type: "shoe",
       image: nike1,
-      price: "$1000",
+      price: 1000,
+      amount: 1
     },
     {
       id: "2",
       name: "Nike Snkrs Black",
       type: "shoe",
       image: nike2,
-      price: "$2000",
+      price: 2000,
+      amount: 1
     },
     {
       id: "3",
       name: "Nike Snkrs White&Blue",
       type: "shoe",
       image: nike3,
-      price: "$3000",
+      price: 3000,
+      amount: 1
     }
   ],
   elegidos: [],
-  categorias: [
-    {
-      id: "1",
-      name: "Nike SB Dunk",
-      type: "shoe",
-      image: nike1,
-      price: "$1000",
-    },
-    {
-      id: "2",
-      name: "Nike Snkrs Black",
-      type: "shoe",
-      image: nike2,
-      price: "$2000",
-    },
-    {
-      id: "3",
-      name: "Nike Snkrs White&Blue",
-      type: "shoe",
-      image: nike3,
-      price: "$3000",
-    }
-  ]
+  busqueda:[],
 };
 
 // types
@@ -79,36 +60,6 @@ const productReducer = (state = initialState, action) => {
         ),
         productos: state.productos.concat(action.producto),
         categorias: state.productos.concat(action.producto),
-      };
-
-    case "CATEGORIA1":
-      return {
-        ...state,
-        productos: state.productos.filter(
-          (categorias) => categorias.name === 'Nike SB Dunk'
-        ),
-      };
-      case "CATEGORIA2":
-      return {
-        ...state,
-        productos: state.productos.filter(
-          (categorias) => categorias.name === 'Nike Snkrs Black'
-        ),
-      };
-      case "CATEGORIA3":
-      return {
-        ...state,
-        productos: state.productos.filter(
-          (categorias) => categorias.name === 'Nike Snkrs White&Blue'
-        ),
-      };
-
-      case "SINCATEGORIA":
-      return {
-        ...state,
-        productos: state.categorias.filter(
-          (producto) => producto.name !== action.producto.name
-        ),
       };
 
     default:

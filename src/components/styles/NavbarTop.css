@@ -48,6 +48,8 @@
   border-radius: 50px;
   border: 0.2px solid #d0d0d091;
   box-sizing: border-box;
+
+  display: none;
 }
 .buscador-ico-cont {
   position: relative;

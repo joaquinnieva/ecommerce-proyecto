@@ -8,21 +8,26 @@ function CarritoItems({ elegidos, borrarElegido }) {
     <div className="cont-page">
       <div className="cont-carrito">
         <h2 className="carrito-titulo">Carrito</h2>
-        {elegidos.map((producto) => (
-          <div className="carrito-item" key={producto.id}>
-            <div className="carrito-info">
-              <img src={producto.image} className="carrito-img" alt="icon" />
-              <div className="carrito-name"> {producto.name} </div>
-              <div className="carrito-price"> {producto.price} </div>
+        {elegidos.length === 0 ? (
+          <p>No hay nada por aquí...</p>
+        ) : (
+          elegidos.map((producto) => (
+            <div className="carrito-item" key={producto.id}>
+              <div className="carrito-info">
+                <img src={producto.image} className="carrito-img" alt="icon" />
+                <div className="carrito-name"> {producto.name} </div>
+                <div className="carrito-price"> $ {producto.price} </div>
+              </div>
+              {/* <div>{producto.amount}</div> */}
+              <button
+                className="carrito-borrar"
+                onClick={() => borrarElegido(producto)}
+              >
+                <img src={Images.basura} alt="icon" />
+              </button>
             </div>
-            <button
-              className="carrito-borrar"
-              onClick={() => borrarElegido(producto)}
-            >
-              <img src={Images.basura} alt="icon" />
-            </button>
-          </div>
-        ))}
+          ))
+        )}
       </div>
     </div>
   );
