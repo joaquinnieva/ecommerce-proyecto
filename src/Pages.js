@@ -12,8 +12,8 @@ import Footer from "./components/Footer";
 function Pages() {
   return (
     <BrowserRouter>
-      <NavbarSide />
       <NavbarTop />
+      <NavbarSide />
       <Switch>
         <Redirect from="/ecommerce-proyecto" to="/inicio" />
         <Route exact path="/inicio" component={Inicio} />

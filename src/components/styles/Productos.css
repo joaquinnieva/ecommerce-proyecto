@@ -128,7 +128,7 @@
     grid-row: 2/3;
   }
   .producto-item {
-    padding: 10px;
+    padding: 40px;
     margin: 20px 0px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px -3px #000000d9;
@@ -192,7 +192,7 @@
   .cont-page-prod {
     position: relative;
     margin: 0px 0px 0px 0px;
-    padding: 140px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     z-index: 1;
     overflow: hidden;
     display: grid;
@@ -207,7 +207,7 @@
     grid-row: 2/3;
   }
   .producto-item {
-    padding: 10px;
+    padding: 40px;
     margin: 20px 0px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px -3px #000000d9;

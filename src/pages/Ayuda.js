@@ -1,13 +1,9 @@
 import React from "react";
-import NavbarSide from "../components/NavbarSide";
-import NavbarTop from "../components/NavbarTop";
 import "../components/styles/Ayuda.css";
 
 function Ayuda() {
   return (
     <>
-      <NavbarSide />
-      <NavbarTop />
       <div className="cont-page">
         <div className="cont-texto-ayuda">
           <div className="ayuda-titulo">

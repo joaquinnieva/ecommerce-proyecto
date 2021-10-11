@@ -9,19 +9,21 @@
 }
 .carrito-numero{
     position: absolute;
+    width: 25px;
+    text-align: center;
     color: #FD611A;
     font-size: 18px;
     font-weight: 600;
     padding: 0px 7px;
     border-radius: 100%;
-    top: 10px;
-    right: 37px;
+    top: 8px;
+    right: 33px;
     user-select: none;
 }
 @media (max-width: 500px){
     .carrito-numero{
         position: absolute;
         top: 10px;
-        right: 7px;
+        right: 3px;
     }
 }

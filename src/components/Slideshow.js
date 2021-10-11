@@ -93,7 +93,6 @@ const ContenedorSlideshow = styled.div`
 const Slide = styled.div`
 	overflow: hidden;
 	transition: .3s ease all;
-	z-index: 10;
 	min-width: ${props => props.tamaño ? props.tamaño : '100%'};
 	/* max-height: 500px; */
 	height: 100%;
@@ -123,7 +122,6 @@ const TextoSlide = styled.div`
 const Controles = styled.div`
 	position: absolute;
 	top: 0;
-	z-index: 20;
 	width: 100%;
 	height: 100%;
 	pointer-events: none;

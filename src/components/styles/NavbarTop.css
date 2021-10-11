@@ -89,7 +89,7 @@
     position: fixed;
     top: 0px;
     width: 100%;
-    height: 100px;
+    height: 80px;
     z-index: 5;
     background: #ffffff;
     display: flex;
@@ -98,13 +98,13 @@
   }
   .carrito {
     width: 47px;
-    margin: 10px 0px auto 0px;
+    margin: 0px;
   }
   .cont-logoecommerce {
     position: fixed;
     height: 80px;
     width: 60px;
-    margin: 10px 0px auto 0px;
+    margin: 0px;
     z-index: 10;
     display: flex;
     justify-content: center;

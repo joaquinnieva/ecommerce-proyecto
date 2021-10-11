@@ -104,7 +104,7 @@
 .carrito-total-text{
   color: #313131;
   display: grid;
-  grid-template-columns: 1fr 100px;
+  grid-template-columns: 1fr 120px;
 }
 .carrito-comprar{
   display: flex;

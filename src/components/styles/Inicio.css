@@ -3,13 +3,11 @@
   position: relative;
   margin: 0px 0px 0px 80px;
   padding: 90px 0px 0px 0px;
-  z-index: 1;
-
 }
 
 @media (max-width: 500px) {
   .cont-page {
     margin: 0px 0px 0px 0px;
-    padding: 140px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
   }
 }
