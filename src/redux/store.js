@@ -103,7 +103,7 @@ const initialState = {
       amount: 1,
     },
     {
-      id: 12,
+      id: 13,
       name: "Nike SB Dunk",
       type: "shoe",
       image: nike1,
@@ -111,7 +111,7 @@ const initialState = {
       amount: 1,
     },
     {
-      id: 13,
+      id: 14,
       name: "Nike Snkrs Black",
       type: "shoe",
       image: nike2,
@@ -119,7 +119,7 @@ const initialState = {
       amount: 1,
     },
     {
-      id: 14,
+      id: 15,
       name: "Nike Snkrs White&Blue",
       type: "shoe",
       image: nike3,
@@ -142,7 +142,7 @@ const productReducer = (state = initialState, action) => {
     case "BORRADO":
       return {
         ...state,
-        carrito: state.carrito.filter((producto) => producto.name !== action.producto.name),
+        carrito: state.carrito.filter((producto) => producto.id !== action.producto.id),
       };
 
     case "SUMARPRODUCTO":

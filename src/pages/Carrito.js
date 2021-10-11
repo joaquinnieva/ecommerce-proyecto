@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import Images from "../components/Images";
 import "../components/styles/Carrito.css";
+import obtenerTotal from "../functions/obtenerTotal";
 
 function Carrito({ carrito, borrarElegido, sumarProducto, restarProducto }) {
   const sumar = (producto) => {
@@ -15,6 +16,9 @@ function Carrito({ carrito, borrarElegido, sumarProducto, restarProducto }) {
     if (inCart.amount > 1) {
       restarProducto(producto);
     }
+  };
+  const comprar = () => {
+    console.log("No es un ecommerce de verdad");
   };
 
   return (
@@ -32,7 +36,7 @@ function Carrito({ carrito, borrarElegido, sumarProducto, restarProducto }) {
                 <div className="carrito-price"> $ {producto.price * producto.amount} </div>
               </div>
 
-              <div className="carrito-details" >
+              <div className="carrito-details">
                 <div className="carrito-fix"></div>
                 <div className="carrito-amount">
                   <button className="carrito-amount-boton" onClick={() => sumar(producto)}>
@@ -51,6 +55,17 @@ function Carrito({ carrito, borrarElegido, sumarProducto, restarProducto }) {
             </div>
           ))
         )}
+      </div>
+      <div className="carrito-total">
+        <div className="carrito-total-text">
+          <h2>Total</h2>
+          <h2>$ {obtenerTotal(carrito)}</h2>
+        </div>
+        <div className="carrito-comprar">
+          <button onClick={comprar} className="carrito-comprar-text">
+            Comprar
+          </button>
+        </div>
       </div>
     </div>
   );

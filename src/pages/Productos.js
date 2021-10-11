@@ -20,7 +20,7 @@ function Productos({ productos, agregarAlCarrito, carrito, sumarProducto }) {
     <div className="cont-page-prod">
       <div className="productos-lista">
         {productos.map((producto) => (
-          <div className="producto-item" key={producto.name}>
+          <div className="producto-item" key={producto.id}>
             <img src={producto.image} className="item-imagen" alt="producto" />
             <div className="item-name"> {producto.name} </div>
             <div className="item-price">$ {producto.price} </div>
