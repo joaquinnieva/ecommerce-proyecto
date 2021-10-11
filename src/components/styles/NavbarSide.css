@@ -60,6 +60,9 @@
 .nav-item:hover {
   background-color: #373737;
 }
+.active {
+  background-color: #444444;
+}
 .item-img {
   width: 24px;
   height: 24px;

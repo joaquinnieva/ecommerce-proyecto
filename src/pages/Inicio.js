@@ -1,17 +1,53 @@
 import React from "react";
-import Inicioo from "../components/Inicioo";
-import NavbarSide from "../components/NavbarSide";
-import NavbarTop from "../components/NavbarTop";
-import Footer from "../components/Footer";
+import "../components/styles/Inicio.css";
+import { Slide, Slideshow } from "../components/Slideshow";
+import Images from "../components/Images";
 
 function Inicio() {
   return (
-    <>
-      <NavbarSide />
-      <NavbarTop />
-      <Inicioo />
-      <Footer />
-    </>
+    <div className="cont-page">
+      <Slideshow controles={true}>
+        <Slide>
+          <img src={Images.add1} alt="alt" />
+        </Slide>
+        <Slide>
+          <img src={Images.add2} alt="alt" />
+        </Slide>
+        <Slide>
+          <img src={Images.add3} alt="alt" />
+        </Slide>
+      </Slideshow>
+      <Slideshow controles={true}>
+        <Slide>
+          <img src={Images.add2} alt="alt" />
+        </Slide>
+        <Slide>
+          <img src={Images.add2} alt="alt" />
+        </Slide>
+        <Slide>
+          <img src={Images.add3} alt="alt" />
+        </Slide>
+      </Slideshow>
+      <Slideshow controles={true}>
+        <Slide>
+          <img src={Images.add3} alt="alt" />
+        </Slide>
+        <Slide>
+          <img src={Images.add2} alt="alt" />
+        </Slide>
+        <Slide>
+          <img src={Images.add3} alt="alt" />
+        </Slide>
+      </Slideshow>
+      <Slideshow controles={true}>
+        <Slide>
+          <img src={Images.add4} alt="alt" />
+        </Slide>
+        <Slide>
+          <img src={Images.add5} alt="alt" />
+        </Slide>
+      </Slideshow>
+    </div>
   );
 }
 

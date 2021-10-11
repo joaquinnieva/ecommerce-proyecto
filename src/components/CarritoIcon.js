@@ -2,21 +2,24 @@ import React from "react";
 import { connect } from "react-redux";
 import "./styles/CarritoIcon.css";
 import Images from "./Images";
+import sumarProductos from "../functions/sumarProductos";
+import { Link } from "react-router-dom";
 
-function CarritoIcon({elegidos}) {
+function CarritoIcon({ carrito }) {
+  const sumando = sumarProductos(carrito);
 
   return (
     <>
-      <a href="#/carrito">
-        <div className="carrito-numero">{elegidos.length}</div>
-        <img className="carritocompras" src={Images.carrito} alt="icon"/>
-      </a>
+      <Link to="/carrito">
+        <div className="carrito-numero">{sumando}</div>
+        <img className="carritocompras" src={Images.carrito} alt="carrito" />
+      </Link>
     </>
   );
 }
 
-const mapStateToProps = state => ({
-  elegidos: state.elegidos
-})
+const mapStateToProps = (state) => ({
+  carrito: state.carrito,
+});
 
 export default connect(mapStateToProps, {})(CarritoIcon);
