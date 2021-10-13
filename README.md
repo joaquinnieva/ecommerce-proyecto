@@ -7,8 +7,8 @@ _Bienvenido a mi proyecto 👋<br /> Es un proyecto para mi portafolio donde des
 ---
  
 Tecnologias:
-- React
-- React-router
-- Redux
-- CSS
-- Styled-components
+- `React`
+- `React-router`
+- `Redux`
+- `CSS`
+- `Styled-components`
