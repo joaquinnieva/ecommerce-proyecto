@@ -10,6 +10,6 @@ Tecnologias:
 - `React`
 - `React-router`
 - `Redux`
-- </br>
+- <hr>
 - `CSS`
 - `Styled-components`
