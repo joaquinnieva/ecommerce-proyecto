@@ -9,6 +9,6 @@ _Bienvenido a mi proyecto 👋<br /> Es un proyecto para mi portafolio donde des
 Tecnologias:
 - `React`
 - `React-router`
-- `Redux`<br/>
+- `Redux`</br>
 - `CSS`
 - `Styled-components`
