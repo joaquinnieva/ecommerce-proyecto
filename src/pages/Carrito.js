@@ -1,8 +1,8 @@
-import React from "react";
-import { connect } from "react-redux";
-import Images from "../components/Images";
-import "../components/styles/Carrito.css";
-import obtenerTotal from "../functions/obtenerTotal";
+import React from 'react';
+import { connect } from 'react-redux';
+import Images from '../components/Images';
+import obtenerTotal from '../functions/obtenerTotal';
+import '../styles/Carrito.css';
 
 function Carrito({ carrito, borrarElegido, sumarProducto, restarProducto }) {
   const sumar = (producto) => {
@@ -18,7 +18,7 @@ function Carrito({ carrito, borrarElegido, sumarProducto, restarProducto }) {
     }
   };
   const comprar = () => {
-    console.log("No es un ecommerce de verdad");
+    alert('No es un ecommerce de verdad');
   };
 
   return (
@@ -78,19 +78,19 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   borrarElegido(producto) {
     dispatch({
-      type: "BORRADO",
+      type: 'BORRADO',
       producto,
     });
   },
   sumarProducto(producto) {
     dispatch({
-      type: "SUMARPRODUCTO",
+      type: 'SUMARPRODUCTO',
       producto,
     });
   },
   restarProducto(producto) {
     dispatch({
-      type: "RESTARPRODUCTO",
+      type: 'RESTARPRODUCTO',
       producto,
     });
   },

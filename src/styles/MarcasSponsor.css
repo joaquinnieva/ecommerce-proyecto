@@ -1,0 +1,42 @@
+.cardmarcas-cont {
+  width: auto;
+  height: auto;
+  padding: 30px 0px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  user-select: none;
+}
+.card {
+  width: 300px;
+  height: 236px;
+  margin: 30px auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.card:hover {
+  width: 320px;
+  height: 250px;
+  box-shadow: 0px 0px 30px 1px #000000;
+}
+.card:hover .card-img {
+  width: 220px;
+}
+.card-img {
+  width: 200px;
+  transition: 0.5s;
+}
+
+@media (max-width: 1000px) {
+  .cardmarcas-cont {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+  }
+}

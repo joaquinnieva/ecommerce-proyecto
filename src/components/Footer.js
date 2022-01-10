@@ -1,7 +1,7 @@
-import React from "react";
-import "./styles/Footer.css";
-import Images from "./Images";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../styles/Footer.css';
+import Images from './Images';
 
 function Footer() {
   return (
@@ -20,7 +20,11 @@ function Footer() {
         </div>
 
         <div className="contactame contac3">
-          <h3>TRABAJÁ CON NOSOTROS</h3>
+          <h3>
+            <Link to="/ayuda" className="contact-ayuda">
+              TRABAJÁ CON NOSOTROS
+            </Link>
+          </h3>
         </div>
 
         <div className="contactame contac4">
@@ -41,7 +45,7 @@ function Footer() {
           </div>
         </div>
 
-        <p className="copy-footer">&copy;Todos los derechos reservados.</p>
+        <p className="copy-footer">© Todos los derechos reservados.</p>
       </div>
     </footer>
   );

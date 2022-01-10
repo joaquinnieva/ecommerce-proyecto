@@ -1,52 +1,12 @@
-import React from "react";
-import "../components/styles/Inicio.css";
-import { Slide, Slideshow } from "../components/Slideshow";
-import Images from "../components/Images";
+import React from 'react';
+import Slider from '../components/Slider';
+import slidesImages from '../data/slidesImages';
+import '../styles/Inicio.css';
 
 function Inicio() {
   return (
     <div className="cont-page">
-      <Slideshow controles={true}>
-        <Slide>
-          <img src={Images.add1} alt="alt" />
-        </Slide>
-        <Slide>
-          <img src={Images.add2} alt="alt" />
-        </Slide>
-        <Slide>
-          <img src={Images.add3} alt="alt" />
-        </Slide>
-      </Slideshow>
-      <Slideshow controles={true}>
-        <Slide>
-          <img src={Images.add2} alt="alt" />
-        </Slide>
-        <Slide>
-          <img src={Images.add2} alt="alt" />
-        </Slide>
-        <Slide>
-          <img src={Images.add3} alt="alt" />
-        </Slide>
-      </Slideshow>
-      <Slideshow controles={true}>
-        <Slide>
-          <img src={Images.add3} alt="alt" />
-        </Slide>
-        <Slide>
-          <img src={Images.add2} alt="alt" />
-        </Slide>
-        <Slide>
-          <img src={Images.add3} alt="alt" />
-        </Slide>
-      </Slideshow>
-      <Slideshow controles={true}>
-        <Slide>
-          <img src={Images.add4} alt="alt" />
-        </Slide>
-        <Slide>
-          <img src={Images.add5} alt="alt" />
-        </Slide>
-      </Slideshow>
+      <Slider slides={slidesImages} />
     </div>
   );
 }

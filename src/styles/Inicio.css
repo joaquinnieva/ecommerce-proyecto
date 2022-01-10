@@ -1,0 +1,31 @@
+.cont-page {
+  min-height: calc(100vh - 100px);
+  position: relative;
+  margin: 0px 0px 0px 80px;
+  padding: 90px 0px 0px 0px;
+}
+.slider-cont {
+  padding: 0px 20px 20px 20px;
+}
+.slider-ads {
+  padding: 50px 0px;
+}
+.img-ads {
+  width: 100%;
+}
+.carousel .carousel-status {
+  display: none !important;
+}
+.carousel .thumbs {
+  display: none !important;
+}
+@media (max-width: 500px) {
+  .cont-page {
+    min-height: calc(100vh - 300px);
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+  .slider-ads {
+    padding: 10px;
+  }
+}

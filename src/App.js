@@ -1,13 +1,12 @@
-import React from "react";
-import Pages from "./Pages";
-import {Provider} from 'react-redux';
+import React from 'react';
+import { Provider } from 'react-redux';
 import store from './redux/store';
+import Router from './Router';
 
 function App() {
-
   return (
     <Provider store={store}>
-      <Pages/>
+      <Router />
     </Provider>
   );
 }

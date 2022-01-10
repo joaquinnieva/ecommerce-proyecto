@@ -1,6 +1,6 @@
-import { connect } from "react-redux";
-import "../components/styles/Productos.css";
-import noDuplicado from "../functions/noDuplicado";
+import { connect } from 'react-redux';
+import noDuplicado from '../functions/noDuplicado';
+import '../styles/Productos.css';
 
 function Productos({ productos, agregarAlCarrito, carrito, sumarProducto }) {
   const mandarAlCarrito = (producto) => {
@@ -42,13 +42,13 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   agregarAlCarrito(producto) {
     dispatch({
-      type: "ELEGIDO",
+      type: 'ELEGIDO',
       producto,
     });
   },
   sumarProducto(producto) {
     dispatch({
-      type: "SUMARPRODUCTO",
+      type: 'SUMARPRODUCTO',
       producto,
     });
   },

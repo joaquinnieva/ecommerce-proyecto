@@ -1,15 +1,15 @@
 import React from "react";
-import { Switch, Route, BrowserRouter, Redirect } from "react-router-dom";
-import Inicio from "./pages/Inicio";
-import Productos from "./pages/Productos";
-import Ayuda from "./pages/Ayuda";
-import MarcasSponsor from "./pages/MarcasSponsor";
-import Carrito from "./pages/Carrito";
-import NavbarTop from "./components/NavbarTop";
-import NavbarSide from "./components/NavbarSide";
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import Footer from "./components/Footer";
+import NavbarSide from "./components/NavbarSide";
+import NavbarTop from "./components/NavbarTop";
+import Ayuda from "./pages/Ayuda";
+import Carrito from "./pages/Carrito";
+import Inicio from "./pages/Inicio";
+import MarcasSponsor from "./pages/MarcasSponsor";
+import Productos from "./pages/Productos";
 
-function Pages() {
+function Router() {
   return (
     <BrowserRouter>
       <NavbarTop />
@@ -28,4 +28,4 @@ function Pages() {
   );
 }
 
-export default Pages;
+export default Router;
