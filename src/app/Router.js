@@ -12,7 +12,7 @@ import Productos from '../pages/Productos';
 
 function Router() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ecommerce">
       <NavbarTop />
       <NavbarSide />
       <Switch>
