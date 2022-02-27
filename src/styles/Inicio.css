@@ -10,6 +10,9 @@
 .slider-ads {
   padding: 50px 0px;
 }
+div .slider-ads {
+  display: block !important;
+}
 .img-ads {
   width: 100%;
 }

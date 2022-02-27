@@ -26,6 +26,25 @@ const Slider = ({ slides }) => {
   return (
     <div className="slider-cont">
       <div className="slider-ads">
+        <SliderAds
+          arrows={false}
+          infinite={true}
+          speed={500}
+          slidesToShow={3}
+          slidesToScroll={1}
+          adaptiveHeight={true}
+          autoplay={true}
+          autoplaySpeed={3000}
+        >
+          {slides.map((slide, index) => (
+            <div key={index}>
+              <img className="img-ads" src={slide.src} alt={slide.name} />
+            </div>
+          ))}
+        </SliderAds>
+      </div>
+
+      <div className="slider-ads">
         <SliderAds {...settings1}>
           {slides.map((slide, index) => (
             <div key={index}>
@@ -34,6 +53,7 @@ const Slider = ({ slides }) => {
           ))}
         </SliderAds>
       </div>
+
       <div className="slider-ads">
         <SliderAds {...settings2}>
           {slides.map((slide, index) => (

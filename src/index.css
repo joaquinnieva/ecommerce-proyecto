@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   overflow-x: hidden;
   margin: 0;
@@ -8,4 +12,16 @@ body {
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+a {
+  text-decoration: none !important;
+  color: currentColor;
+}
+a:hover {
+  text-decoration: none !important;
+  color: currentColor;
+}
+
+.btn {
+  @apply py-2 px-4 rounded;
 }

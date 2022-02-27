@@ -116,15 +116,17 @@
 }
 .carrito-comprar-text {
   text-align: center;
-  border-radius: 30px;
+
   border: none;
   cursor: pointer;
   padding: 10px 20px;
   color: white;
-  background-color: #313131;
+  background-color: rgb(253 97 26);
+  transition: ease 0.3s;
 }
 .carrito-comprar-text:hover {
-  background-color: rgb(253 97 26);
+  border-radius: 6px;
+  transition: ease 0.3s;
 }
 
 @media (min-width: 500px) {

@@ -10,7 +10,7 @@ function CarritoIcon({ carrito }) {
 
   return (
     <>
-      <Link className="carrito-cont" to="/carrito">
+      <Link className="carrito-cont" to="/cart">
         <div className="carrito-numero">{sumando}</div>
         <img className="carritocompras" src={Images.carrito} alt="carrito" />
       </Link>

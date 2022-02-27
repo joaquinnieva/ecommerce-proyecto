@@ -45,7 +45,12 @@ function Footer() {
           </div>
         </div>
 
-        <p className="copy-footer">© Todos los derechos reservados.</p>
+        <p className="copy-footer">
+          Desarrollado por{' '}
+          <a href="https://joaquinnieva.github.io/joaquinnieva/" target="_blank" rel="noreferrer">
+            Joaquin Nieva
+          </a>
+        </p>
       </div>
     </footer>
   );

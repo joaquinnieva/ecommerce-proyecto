@@ -20,7 +20,7 @@ function NavbarSide() {
         <nav className="navbar-side">
           {routesNavigation.map((route, index) => (
             <NavLink key={index} activeClassName="active-nav" className="nav-item-side" to={route.page}>
-              <img className="item-img" src={route.image} alt="icono" />
+              <div className="item-img">{route.image}</div>
               <div className="item-text">{route.name}</div>
             </NavLink>
           ))}
