@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Footer from '../components/Footer';
 import NavbarSide from '../components/NavbarSide';
 import NavbarTop from '../components/NavbarTop';
@@ -16,7 +16,6 @@ function Router() {
       <NavbarTop />
       <NavbarSide />
       <Switch>
-        <Redirect from="/ecommerce-proyecto" to="/home" />
         <Route exact path="/home" component={Inicio} />
         <Route exact path="/products" component={Productos} />
         <Route exact path="/product/:id" component={ProductoDetalle} />
