@@ -6,16 +6,12 @@ import { getProducts } from '../functions/apiServices';
 import '../styles/ProductoDetalle.css';
 
 function ProductoDetalle() {
-  const [cargando, setCargando] = useState(false);
-  const [producto, setProducto] = useState([]);
+  const [producto, setProducto] = useState(false);
   const { id } = useParams();
-
   const effProducts = async () => {
-    setCargando(true);
     const res = await getProducts(id);
     if (res) {
       setProducto(res);
-      setCargando(false);
     }
   };
 
@@ -25,11 +21,10 @@ function ProductoDetalle() {
 
   return (
     <main className="cont-page container">
-      {cargando && <Loader />}
-      {producto && (
+      {producto ? (
         <>
           <div className="left-column">
-            <img src={producto.image} alt="" />
+            <img src={producto.image} alt="product" className="left-img" />
           </div>
           <div className="right-column">
             <div className="product-description">
@@ -46,6 +41,8 @@ function ProductoDetalle() {
             </div>
           </div>
         </>
+      ) : (
+        <Loader />
       )}
     </main>
   );

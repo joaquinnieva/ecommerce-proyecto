@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react';
-import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Loader from '../components/Loader';
 import { getProducts } from '../functions/apiServices';
 import '../styles/Productos.css';
 
-function Productos({ agregarAlCarrito, carrito, sumarProducto }) {
+function Productos() {
   const [cargando, setCargando] = useState(false);
   const [productos, setProductos] = useState([]);
   // const mandarAlCarrito = (producto) => {
@@ -27,8 +26,11 @@ function Productos({ agregarAlCarrito, carrito, sumarProducto }) {
     if (res) {
       setProductos(res);
       setCargando(false);
+    } else {
+      setCargando(false);
     }
   };
+  console.log(cargando);
 
   useEffect(() => {
     effProducts();
@@ -61,23 +63,4 @@ function Productos({ agregarAlCarrito, carrito, sumarProducto }) {
   );
 }
 
-const mapStateToProps = (state) => ({
-  carrito: state.carrito,
-});
-
-const mapDispatchToProps = (dispatch) => ({
-  agregarAlCarrito(producto) {
-    dispatch({
-      type: 'ELEGIDO',
-      producto,
-    });
-  },
-  sumarProducto(producto) {
-    dispatch({
-      type: 'SUMARPRODUCTO',
-      producto,
-    });
-  },
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(Productos);
+export default Productos;
