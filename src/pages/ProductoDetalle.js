@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import Loader from '../components/Loader';
 import { getProducts } from '../functions/apiServices';
@@ -20,28 +21,28 @@ function ProductoDetalle() {
 
   useEffect(() => {
     effProducts();
-  }, []);
+  });
 
   return (
-    <main class="cont-page container">
+    <main className="cont-page container">
       {cargando && <Loader />}
       {producto && (
         <>
-          <div class="left-column">
+          <div className="left-column">
             <img src={producto.image} alt="" />
           </div>
-          <div class="right-column">
-            <div class="product-description">
+          <div className="right-column">
+            <div className="product-description">
               <span>{producto.category}</span>
               <h1>{producto.title}</h1>
               <p>{producto.description}</p>
             </div>
 
-            <div class="product-price">
+            <div className="product-price">
               <span>${producto.price}</span>
-              <a href="#" class="cart-btn">
+              <Link href="/cart" className="cart-btn">
                 Add to cart
-              </a>
+              </Link>
             </div>
           </div>
         </>
