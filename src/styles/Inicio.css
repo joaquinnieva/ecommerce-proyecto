@@ -1,7 +1,7 @@
 .cont-page {
   min-height: calc(100vh - 100px);
   position: relative;
-  margin: 0px 0px 0px 80px;
+  margin: 0px 0px 0px 70px;
   padding: 90px 0px 0px 0px;
 }
 .slider-cont {
@@ -9,6 +9,8 @@
 }
 .slider-ads {
   padding: 50px 0px;
+  overflow: hidden;
+  height: 400px;
 }
 div .slider-ads {
   display: block !important;
