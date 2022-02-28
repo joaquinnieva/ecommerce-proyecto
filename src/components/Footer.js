@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { BRAND, DEVELOPER_NAME, FOOTER_DEVELOPED, FOOTER_FOLLOWME, LINK_HELP, LINK_JOB } from '../data/constants';
 import '../styles/Footer.css';
 import Images from './Images';
 
@@ -9,25 +10,23 @@ function Footer() {
       <div className="contact">
         <div className="contactame footer-brand">
           <Link to="/home" className="contact-ayuda">
-            ecommerce
+            {BRAND}
           </Link>
         </div>
-
         <div className="contactame footer-links">
           <p>
             <Link to="/ayuda" className="contact-ayuda">
-              AYUDA
+              {LINK_HELP}
             </Link>
           </p>
           <p>
             <Link to="/ayuda" className="contact-ayuda">
-              TRABAJÁ CON NOSOTROS
+              {LINK_JOB}
             </Link>
           </p>
         </div>
-
         <div className="contactame footer-social">
-          <p>SEGUINOS EN:</p>
+          <p>{FOOTER_FOLLOWME}</p>
           <div className="img-cont-footer">
             <Link to="/ayuda">
               <img className="imgfooter" src={Images.twitter} alt="icon" />
@@ -45,9 +44,9 @@ function Footer() {
         </div>
 
         <p className="copy-footer">
-          Desarrollado por{' '}
+          {FOOTER_DEVELOPED}
           <a href="https://joaquinnieva.github.io/joaquinnieva/" target="_blank" rel="noreferrer">
-            Joaquin Nieva
+            {DEVELOPER_NAME}
           </a>
         </p>
       </div>

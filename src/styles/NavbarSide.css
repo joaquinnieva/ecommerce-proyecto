@@ -9,7 +9,7 @@
 }
 .menu {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 60px;
   top: 80px;
   z-index: 5;
