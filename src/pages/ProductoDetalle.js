@@ -1,26 +1,24 @@
-import React, { useEffect, useState } from 'react';
+/* eslint-disable eqeqeq */
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
+import { useHistory, useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loader from '../components/Loader';
-import { getProducts } from '../functions/apiServices';
 import noDuplicado from '../functions/noDuplicado';
 import { agregarAlCarrito } from '../redux/slice/cartSlice';
 import '../styles/ProductoDetalle.css';
 
 function ProductoDetalle() {
-  const [producto, setProducto] = useState(false);
+  const productos = useSelector((state) => state.shop.products);
   const { id } = useParams();
   const dispatch = useDispatch();
+  const history = useHistory();
   const carrito = useSelector((state) => state.products.cart);
   const notify = () => toast.success('Agregado al carrito!');
-  const effProducts = async () => {
-    const res = await getProducts(id);
-    if (res) {
-      setProducto(res);
-    }
-  };
+  const producto = productos?.filter((item) => item.id == id);
+
   const mandarAlCarrito = (producto) => {
     const productoNoDuplicado = noDuplicado(carrito, producto);
     if (productoNoDuplicado) {
@@ -30,8 +28,10 @@ function ProductoDetalle() {
   };
 
   useEffect(() => {
-    effProducts();
-  });
+    if (!productos) {
+      history.push('/home');
+    }
+  }, [producto]);
 
   return (
     <main className="cont-page container">
@@ -47,30 +47,32 @@ function ProductoDetalle() {
         toastStyle={{ backgroundColor: '#313131' }}
       />
       {producto ? (
-        <>
-          <div className="left-column">
-            <img src={producto.image} alt="product" className="left-img" />
-          </div>
-          <div className="right-column">
-            <div className="product-description">
-              <span>{producto.category}</span>
-              <h1>{producto.title}</h1>
-              <p>{producto.description}</p>
+        producto.map((item, index) => (
+          <React.Fragment key={index}>
+            <div className="left-column">
+              <img src={item.image} alt="product" className="left-img" />
             </div>
+            <div className="right-column">
+              <div className="product-description">
+                <span>{item.category}</span>
+                <h1>{item.title}</h1>
+                <p>{item.description}</p>
+              </div>
 
-            <div className="product-price">
-              <span>${producto.price}</span>
-              <button
-                onClick={() => {
-                  mandarAlCarrito({ ...producto, amount: 1 });
-                }}
-                className="cart-btn"
-              >
-                Agregar al carrito
-              </button>
+              <div className="product-price">
+                <span>${item.price}</span>
+                <button
+                  onClick={() => {
+                    mandarAlCarrito({ ...item, amount: 1 });
+                  }}
+                  className="cart-btn"
+                >
+                  Agregar al carrito
+                </button>
+              </div>
             </div>
-          </div>
-        </>
+          </React.Fragment>
+        ))
       ) : (
         <Loader />
       )}

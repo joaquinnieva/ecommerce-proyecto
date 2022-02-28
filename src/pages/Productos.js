@@ -1,30 +1,23 @@
-import { useEffect, useState } from 'react';
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import Loader from '../components/Loader';
-import { getProducts } from '../functions/apiServices';
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import '../styles/Productos.css';
 
 function Productos() {
-  const [cargando, setCargando] = useState(false);
-  const [productos, setProductos] = useState([]);
-  const effProducts = async () => {
-    setCargando(true);
-    const res = await getProducts();
-    if (res) {
-      setProductos(res);
-      setCargando(false);
-    } else {
-      setCargando(false);
-    }
-  };
+  const productos = useSelector((state) => state.shop.products);
+  const history = useHistory();
 
   useEffect(() => {
-    effProducts();
+    if (!productos) {
+      history.push('/home');
+    }
   }, []);
 
   return (
     <div className="cont-page-prod">
-      {cargando && <Loader />}
+      {/* {cargando && <Loader />} */}
       <section className="text-gray-600 body-font">
         <div className="px-5 py-24 mx-auto">
           <div className="container-productos">
