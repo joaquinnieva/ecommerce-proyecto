@@ -1,6 +1,8 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import Images from '../components/Images';
+import obtenerTotal from '../functions/obtenerTotal';
 import { borrarDelCarrito } from '../redux/slice/cartSlice';
 import '../styles/Carrito.css';
 
@@ -24,13 +26,16 @@ function Carrito() {
             <div className="carrito-item" key={producto.id}>
               <div className="carrito-info">
                 <img src={producto.image} className="carrito-img" alt="icon" />
-                <div className="carrito-name"> {producto.title} </div>
+                <Link to={'/product/' + producto.id} className="carrito-name">
+                  {producto.title}
+                </Link>
                 <div className="carrito-price"> $ {producto.price * producto.amount} </div>
               </div>
 
               <div className="carrito-details">
                 <div className="carrito-fix"></div>
-                <div className="carrito-amount">
+
+                {/* <div className="carrito-amount">
                   <button className="carrito-amount-boton" onClick={() => {}}>
                     +
                   </button>
@@ -38,7 +43,7 @@ function Carrito() {
                   <button className="carrito-amount-boton" onClick={() => {}}>
                     -
                   </button>
-                </div>
+                </div> */}
 
                 <button
                   className="carrito-borrar"
@@ -56,7 +61,7 @@ function Carrito() {
       <div className="carrito-total">
         <div className="carrito-total-text">
           <h2>Total</h2>
-          <h2>$ asd</h2>
+          <h2>${obtenerTotal(carrito)}</h2>
         </div>
         <div className="carrito-comprar">
           <button onClick={comprar} className="carrito-comprar-text">

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Loader from '../components/Loader';
 import { getProducts } from '../functions/apiServices';
 import noDuplicado from '../functions/noDuplicado';
@@ -12,6 +14,7 @@ function ProductoDetalle() {
   const { id } = useParams();
   const dispatch = useDispatch();
   const carrito = useSelector((state) => state.products.cart);
+  const notify = () => toast.success('Agregado al carrito!');
   const effProducts = async () => {
     const res = await getProducts(id);
     if (res) {
@@ -19,9 +22,9 @@ function ProductoDetalle() {
     }
   };
   const mandarAlCarrito = (producto) => {
-    console.log(producto);
     const productoNoDuplicado = noDuplicado(carrito, producto);
     if (productoNoDuplicado) {
+      notify();
       dispatch(agregarAlCarrito(producto));
     }
   };
@@ -32,6 +35,17 @@ function ProductoDetalle() {
 
   return (
     <main className="cont-page container">
+      <ToastContainer
+        position="top-center"
+        autoClose={3000}
+        hideProgressBar
+        newestOnTop={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        toastStyle={{ backgroundColor: '#313131' }}
+      />
       {producto ? (
         <>
           <div className="left-column">
