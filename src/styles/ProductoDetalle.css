@@ -13,8 +13,10 @@
   align-items: center;
 }
 .left-img {
-  height: 80%;
+  height: auto;
+  max-height: 80%;
   width: auto;
+  max-width: 100%;
 }
 .right-column {
   width: 40%;
