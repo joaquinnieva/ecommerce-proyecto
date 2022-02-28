@@ -7,19 +7,6 @@ import '../styles/Productos.css';
 function Productos() {
   const [cargando, setCargando] = useState(false);
   const [productos, setProductos] = useState([]);
-  // const mandarAlCarrito = (producto) => {
-  //   const productoNoDuplicado = noDuplicado(carrito, producto);
-  //   if (productoNoDuplicado) {
-  //     agregarAlCarrito(producto);
-  //   }
-  //   const inCart = carrito.find((productos) => productos.id === producto.id);
-  //   if (!productoNoDuplicado) {
-  //     if (inCart.amount < 10) {
-  //       sumarProducto(producto);
-  //     }
-  //   }
-  // };
-
   const effProducts = async () => {
     setCargando(true);
     const res = await getProducts();

@@ -1,11 +1,12 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import sumarProductos from '../functions/sumarProductos';
 import '../styles/CarritoIcon.css';
 import Images from './Images';
 
-function CarritoIcon({ carrito }) {
+function CarritoIcon() {
+  const carrito = useSelector((state) => state.products.cart);
   const sumando = sumarProductos(carrito);
 
   return (
@@ -18,8 +19,4 @@ function CarritoIcon({ carrito }) {
   );
 }
 
-const mapStateToProps = (state) => ({
-  carrito: state.carrito,
-});
-
-export default connect(mapStateToProps, {})(CarritoIcon);
+export default CarritoIcon;

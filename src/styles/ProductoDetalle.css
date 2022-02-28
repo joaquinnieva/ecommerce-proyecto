@@ -67,6 +67,8 @@
   text-decoration: none;
   padding: 12px 30px;
   transition: all 0.5s;
+  border: none;
+  cursor: pointer;
 }
 .cart-btn:hover {
   border-radius: 6px;

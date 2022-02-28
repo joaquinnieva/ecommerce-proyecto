@@ -31,12 +31,12 @@
   transition: ease 0.3s;
 }
 .slider-cont {
-  padding: 0px 20px 20px 20px;
+  border-top: solid 1px #313131;
 }
 .slider-ads {
-  padding: 50px 0px;
+  padding: 50px 20px;
   overflow: hidden;
-  height: 400px;
+  height: 300px;
 }
 div .slider-ads {
   display: block !important;

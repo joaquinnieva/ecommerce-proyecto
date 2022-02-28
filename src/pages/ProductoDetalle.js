@@ -1,17 +1,28 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import Loader from '../components/Loader';
 import { getProducts } from '../functions/apiServices';
+import noDuplicado from '../functions/noDuplicado';
+import { agregarAlCarrito } from '../redux/slice/cartSlice';
 import '../styles/ProductoDetalle.css';
 
 function ProductoDetalle() {
   const [producto, setProducto] = useState(false);
   const { id } = useParams();
+  const dispatch = useDispatch();
+  const carrito = useSelector((state) => state.products.cart);
   const effProducts = async () => {
     const res = await getProducts(id);
     if (res) {
       setProducto(res);
+    }
+  };
+  const mandarAlCarrito = (producto) => {
+    console.log(producto);
+    const productoNoDuplicado = noDuplicado(carrito, producto);
+    if (productoNoDuplicado) {
+      dispatch(agregarAlCarrito(producto));
     }
   };
 
@@ -35,9 +46,14 @@ function ProductoDetalle() {
 
             <div className="product-price">
               <span>${producto.price}</span>
-              <Link href="/cart" className="cart-btn">
-                Add to cart
-              </Link>
+              <button
+                onClick={() => {
+                  mandarAlCarrito({ ...producto, amount: 1 });
+                }}
+                className="cart-btn"
+              >
+                Agregar al carrito
+              </button>
             </div>
           </div>
         </>
