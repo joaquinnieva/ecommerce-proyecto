@@ -28,7 +28,7 @@ const Slider = ({ slides }) => {
       <div className="slider-ads">
         <SliderAds {...settings1}>
           {slides?.map((info) => (
-            <ProductoCards producto={info} />
+            <ProductoCards producto={info} key={info.id} />
           ))}
         </SliderAds>
       </div>

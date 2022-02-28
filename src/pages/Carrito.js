@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Images from '../components/Images';
 import { CART_BUTTON, CART_MSG, CART_TITLE, CART_TOTAL } from '../data/constants';
 import obtenerTotal from '../functions/obtenerTotal';
-import { borrarDelCarrito } from '../redux/slice/cartSlice';
+import { borrarDelCarrito, restarCantidad, sumarCantidad } from '../redux/slice/cartSlice';
 import '../styles/Carrito.css';
 
 function Carrito() {
@@ -12,6 +12,18 @@ function Carrito() {
   const dispatch = useDispatch();
   const quitarDelCarrito = (producto) => {
     dispatch(borrarDelCarrito(producto));
+  };
+  const sumarProducto = (producto) => {
+    const inCart = carrito.find((productos) => productos.id === producto.id);
+    if (inCart.amount < 10) {
+      dispatch(sumarCantidad(producto));
+    }
+  };
+  const restarProducto = (producto) => {
+    const inCart = carrito.find((productos) => productos.id === producto.id);
+    if (inCart.amount > 1) {
+      dispatch(restarCantidad(producto));
+    }
   };
   const comprar = () => {
     alert('No es un ecommerce de verdad');
@@ -34,11 +46,21 @@ function Carrito() {
 
               <div className="carrito-details">
                 <div className="carrito-amount">
-                  <button className="carrito-amount-boton" onClick={() => {}}>
+                  <button
+                    className="carrito-amount-boton"
+                    onClick={() => {
+                      sumarProducto(producto);
+                    }}
+                  >
                     +
                   </button>
                   <p className="carrito-amount-number">{producto.amount}</p>
-                  <button className="carrito-amount-boton" onClick={() => {}}>
+                  <button
+                    className="carrito-amount-boton"
+                    onClick={() => {
+                      restarProducto(producto);
+                    }}
+                  >
                     -
                   </button>
                 </div>

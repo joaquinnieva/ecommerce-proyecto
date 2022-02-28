@@ -22,7 +22,7 @@ function Productos() {
         <div className="px-5 py-24 mx-auto">
           <div className="container-productos">
             {productos?.map((info) => (
-              <ProductoCards producto={info} />
+              <ProductoCards producto={info} key={info.id} />
             ))}
           </div>
         </div>

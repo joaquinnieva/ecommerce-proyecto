@@ -2,6 +2,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { useHistory, useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -35,6 +36,9 @@ function ProductoDetalle() {
 
   return (
     <main className="cont-page container">
+      <Link to="/products" className="back-shop">
+        ◀
+      </Link>
       <ToastContainer
         position="top-center"
         autoClose={3000}
