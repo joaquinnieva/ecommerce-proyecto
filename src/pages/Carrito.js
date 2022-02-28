@@ -61,7 +61,7 @@ function Carrito() {
       <div className="carrito-total">
         <div className="carrito-total-text">
           <h2>Total</h2>
-          <h2>${obtenerTotal(carrito)}</h2>
+          <h2>${obtenerTotal(carrito).toFixed(2)}</h2>
         </div>
         <div className="carrito-comprar">
           <button onClick={comprar} className="carrito-comprar-text">

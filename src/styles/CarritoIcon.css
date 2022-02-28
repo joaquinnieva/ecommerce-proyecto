@@ -5,11 +5,11 @@
 .carritocompras {
   width: 100%;
   height: auto;
+  transition: ease 0.5s;
 }
 .carritocompras:hover {
-  width: 98%;
-  height: auto;
-  z-index: 2;
+  zoom: 90%;
+  transition: ease 0.5s;
 }
 .carrito-numero {
   position: absolute;
@@ -17,7 +17,7 @@
   top: -10px;
   right: -2px;
   text-align: center;
-  color: #fd611a;
+  color: rgb(53, 53, 53);
   font-size: 18px;
   font-weight: 600;
   user-select: none;

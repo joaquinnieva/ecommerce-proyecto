@@ -36,6 +36,7 @@
   font-size: small;
   padding: 30px 20px;
   width: auto;
+  color: rgb(87, 87, 87);
 }
 .producto-title {
   white-space: normal;
@@ -45,7 +46,7 @@
 }
 .producto-categoria {
   color: #f2601c;
-  text-shadow: 0px 0px 2px black;
+
 }
 
 @media (max-width: 500px) {

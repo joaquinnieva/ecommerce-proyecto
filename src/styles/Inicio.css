@@ -16,7 +16,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  color: rgb(87, 87, 87);
 }
+
 .landing-btn {
   position: relative;
   margin: 30px 50px;

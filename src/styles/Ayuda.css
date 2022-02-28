@@ -3,13 +3,13 @@
   height: auto;
   padding: 0px 0px 50px 0px;
   margin: 0px 30px 0px 30px;
-  color: #313131;
+  color: rgb(87, 87, 87);
 }
 .ayuda-titulo {
   margin: 0px 0px 20px;
   height: 70px;
   border-bottom: 1px solid #313131;
-  color: #313131;
+  color: rgb(87, 87, 87);
   display: flex;
   align-items: center;
 }
