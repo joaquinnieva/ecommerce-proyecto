@@ -3,12 +3,13 @@
   height: auto;
   width: calc(100% - 70px);
   margin: 0px 0px 0px 70px;
-  background: #fd611a;
+  background: #313131;
   display: grid;
   align-items: center;
   grid-template-columns: repeat(4, auto);
   grid-template-rows: auto;
   overflow: hidden;
+  color: #a7a7a7;
 }
 .cont-contact {
   padding: 8px 0px 8px 0px;
@@ -21,35 +22,29 @@
 }
 
 .contactame {
-  margin: 10px 0px;
+  margin: 5px 0px;
   text-align: center;
-  color: #fff;
-  letter-spacing: 2px;
-  font-weight: 700;
+  letter-spacing: 1px;
+  font-weight: 400;
   font-size: 14px;
-  height: 130px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
-.contac1 {
+.footer-brand {
   grid-column-start: 1;
-  border-right: 1px solid white;
+  border-right: 1px solid #585858;
 }
 
-.contac2 {
+.footer-links {
   grid-column-start: 2;
-  border-right: 1px solid white;
+  grid-column-end: 4;
+  border-right: 1px solid #585858;
 }
 
-.contac3 {
-  grid-column-start: 3;
-  border-right: 1px solid white;
-}
-
-.contac4 {
+.footer-social {
   grid-column-start: 4;
   display: flex;
   flex-wrap: wrap;
@@ -59,15 +54,14 @@
   cursor: pointer;
   list-style: none;
   text-decoration: none;
-  color: #fff;
 }
 .contact-ayuda:hover {
   color: rgb(204, 204, 204);
 }
 .copy-footer {
+  color: #868686;
   width: 100%;
   text-align: center;
-  color: white;
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 4;
@@ -83,76 +77,13 @@
   margin: 5px;
 }
 
-@media (max-width: 1000px) {
-  .contact {
-    position: relative;
-    bottom: 0px;
-    height: auto;
-    margin: 0px 0px 0px 70px;
-    background: #fd611a;
-    display: flex;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: repeat(5, auto);
-    overflow: hidden;
-  }
-  .contactame {
-    margin: 10px 0px;
-    text-align: center;
-    color: #fff;
-    letter-spacing: 2px;
-    font-weight: 700;
-    font-size: 14px;
-    height: 130px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .contac1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-  }
-  .contac2 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    border-right: 0px;
-  }
-  .contac3 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 5;
-  }
-  .contac4 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 5;
-  }
-  .copy-footer {
-    width: 100%;
-    text-align: center;
-    color: white;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 5;
-    grid-row-end: 5;
-  }
-}
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .contact {
     position: relative;
     bottom: 0px;
     width: 100%;
     height: auto;
     margin: 0px;
-    background: #fd611a;
     display: flex;
     align-items: center;
     display: grid;
@@ -164,9 +95,8 @@
     width: 80%;
     margin: 0px auto;
     border-right: 0px;
-    border-top: 1px solid white;
   }
-  .contac1 {
+  .footer-brand {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
@@ -174,9 +104,8 @@
     width: 80%;
     margin: 0px auto;
     border-right: 0px;
-    border-bottom: 1px solid white;
   }
-  .contac2 {
+  .footer-links {
     width: 100%;
     grid-column-start: 1;
     grid-column-end: 5;
@@ -184,13 +113,7 @@
     grid-row-end: 3;
     border-top: 0px;
   }
-  .contac3 {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 5;
-  }
-  .contac4 {
+  .footer-social {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 5;
@@ -200,12 +123,10 @@
     padding: 40px 0px 10px 0px;
     width: 100%;
     text-align: center;
-    color: white;
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 6;
     grid-row-end: 7;
-    border-top: 1px solid white;
     width: 80%;
     margin: 0px auto;
   }

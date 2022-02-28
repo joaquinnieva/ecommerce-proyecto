@@ -7,6 +7,12 @@
   grid-template-rows: auto;
   user-select: none;
   grid-gap: 20px;
+  align-items: center;
+}
+.about-section {
+  text-align: center;
+  padding: 40px 0px 50px;
+  color: #313131e8;
 }
 .card {
   width: 100%;
@@ -22,8 +28,6 @@
 }
 .card-img {
   width: 200px;
-}
-.img-ext {
   padding: 68px 0px;
 }
 
@@ -31,8 +35,9 @@
   .cardmarcas-cont {
     width: auto;
     height: auto;
+    margin: 10px 30px;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 0px;
     grid-template-columns: 1fr;
   }
 }

@@ -47,6 +47,7 @@
 /* Product Price */
 .product-price {
   display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -95,8 +96,5 @@
   .product-description h1 {
     font-size: 42px;
     margin: 10px 0;
-  }
-  .product-price {
-    justify-content: center;
   }
 }

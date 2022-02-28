@@ -7,28 +7,27 @@ function Footer() {
   return (
     <footer>
       <div className="contact">
-        <div className="contactame contac1">
-          <h3>ecommerce</h3>
+        <div className="contactame footer-brand">
+          <Link to="/home" className="contact-ayuda">
+            ecommerce
+          </Link>
         </div>
 
-        <div className="contactame contac2">
-          <h3>
+        <div className="contactame footer-links">
+          <p>
             <Link to="/ayuda" className="contact-ayuda">
               AYUDA
             </Link>
-          </h3>
-        </div>
-
-        <div className="contactame contac3">
-          <h3>
+          </p>
+          <p>
             <Link to="/ayuda" className="contact-ayuda">
               TRABAJÁ CON NOSOTROS
             </Link>
-          </h3>
+          </p>
         </div>
 
-        <div className="contactame contac4">
-          <h3>SEGUINOS EN:</h3>
+        <div className="contactame footer-social">
+          <p>SEGUINOS EN:</p>
           <div className="img-cont-footer">
             <Link to="/ayuda">
               <img className="imgfooter" src={Images.twitter} alt="icon" />

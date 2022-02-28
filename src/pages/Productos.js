@@ -30,7 +30,6 @@ function Productos() {
       setCargando(false);
     }
   };
-  console.log(cargando);
 
   useEffect(() => {
     effProducts();
