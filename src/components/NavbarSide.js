@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import CarritoIcon from '../components/CarritoIcon';
 import routesNavigation from '../data/routesNavigation';
 import '../styles/NavbarSide.css';
 import Images from './Images';
@@ -11,11 +12,11 @@ function NavbarSide() {
   return (
     <div className="navbar-container">
       <div className="menu" onClick={handleClick}>
-        <div className="menu-title">MENÚ</div>
         <img className="menu-icon" src={Images.menu} alt="icono" />
       </div>
+      <CarritoIcon></CarritoIcon>
       <div className="linea-side"></div>
-      <div className="fix-logo"></div>
+      <img src={Images.logoecommerce1} alt="" className="brand-img" />
       <div className={click ? 'navbar-contenido-close' : 'navbar-contenido'}>
         <nav className="navbar-side">
           {routesNavigation.map((route, index) => (

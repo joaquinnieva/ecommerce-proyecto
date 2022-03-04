@@ -59,7 +59,7 @@ function Productos() {
     }
   }, [elegido]);
   return (
-    <div className="cont-page-prod">
+    <div className="cont-page">
       <form className="form-container">
         <select className="form-filter" name="select" defaultValue={selectedCategory} onChange={handleCategory}>
           {categories.map((category) => (

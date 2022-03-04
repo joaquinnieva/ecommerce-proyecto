@@ -17,14 +17,17 @@ function ProductoDetalle() {
   const dispatch = useDispatch();
   const history = useHistory();
   const carrito = useSelector((state) => state.products.cart);
-  const notify = () => toast.success('Agregado al carrito!');
+  const notifyOK = () => toast.success('Agregado al carrito!');
+  const notifyNO = () => toast.info('Este item ya está agregado');
   const producto = productos?.filter((item) => item.id == id);
 
   const mandarAlCarrito = (producto) => {
     const productoNoDuplicado = noDuplicado(carrito, producto);
     if (productoNoDuplicado) {
-      notify();
+      notifyOK();
       dispatch(agregarAlCarrito(producto));
+    } else {
+      notifyNO();
     }
   };
 
@@ -33,7 +36,6 @@ function ProductoDetalle() {
       history.push('/home');
     }
   }, [producto]);
-
   return (
     <main className="cont-page container">
       <Link to="/products" className="back-shop">

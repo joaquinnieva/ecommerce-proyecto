@@ -64,7 +64,7 @@ function Carrito() {
                     -
                   </button>
                 </div>
-                <div className="carrito-price"> $ {producto.price * producto.amount} </div>
+                <div className="carrito-price"> $ {(producto.price * producto.amount).toFixed(2)} </div>
                 <button
                   className="carrito-borrar"
                   onClick={() => {

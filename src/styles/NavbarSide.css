@@ -7,11 +7,18 @@
   user-select: none;
   overflow: hidden;
 }
+.brand-img {
+  position: absolute;
+  width: 30px;
+  height: auto;
+  top: 13px;
+  left: calc(50% - 15px);
+  z-index: 100;
+}
 .menu {
   position: relative;
   width: 100vw;
   height: 60px;
-  top: 80px;
   z-index: 5;
   background-color: #313131;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
@@ -20,8 +27,6 @@
   align-items: center;
 }
 .menu-title {
-  margin: 0px 0px 0px 20px;
-  width: 70px;
   height: 30px;
   color: #f8f8fb;
   font-size: 20px;
@@ -30,7 +35,7 @@
 .menu-icon {
   height: 15px;
   width: auto;
-  margin: 0px 20px 0px 0px;
+  margin: 0px 20px;
 }
 .navbar-contenido-close {
   background-color: #313131;
@@ -80,13 +85,11 @@
   transition: ease 0.05s;
 }
 
-.fix-logo {
-  position: relative;
-  height: 80px;
-  width: 100%;
-}
-
 @media (min-width: 500px) {
+  .navbar-side {
+    position: relative;
+    top: 70px;
+  }
   .linea-side {
     position: absolute;
     width: 1px;

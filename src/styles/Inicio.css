@@ -1,8 +1,8 @@
 .cont-page {
-  min-height: calc(100vh - 100px);
+  min-height: 100vh;
   position: relative;
   margin: 0px 0px 0px 70px;
-  padding: 90px 0px 0px 0px;
+  padding: 0;
 }
 .home-landing {
   width: 100%;
@@ -32,9 +32,7 @@
   border-radius: 6px;
   transition: ease 0.3s;
 }
-.slider-cont {
-  border-top: solid 1px #313131;
-}
+
 .slider-ads {
   padding: 50px 20px;
   overflow: hidden;
