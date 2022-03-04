@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Footer from '../components/Footer';
 import NavbarSide from '../components/NavbarSide';
-import NavbarTop from '../components/NavbarTop';
 import Ayuda from '../pages/Ayuda';
 import Carrito from '../pages/Carrito';
 import Inicio from '../pages/Inicio';
@@ -13,7 +12,6 @@ import Productos from '../pages/Productos';
 function Router() {
   return (
     <BrowserRouter>
-      <NavbarTop />
       <NavbarSide />
       <Switch>
         <Route exact path="/home" component={Inicio} />
