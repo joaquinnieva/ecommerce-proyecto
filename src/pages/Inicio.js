@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import logo from '../assets/img/logoecommerce2.png';
+import Loader from '../components/Loader';
 import Slider from '../components/Slider';
 import { BRAND, LANDING_BRAND, LANDING_BUTTON } from '../data/constants';
 import { getProducts } from '../functions/apiServices';
@@ -37,7 +38,7 @@ function Inicio() {
           </Link>
         </div>
       </div>
-      <Slider slides={productos} />
+      {productos ? <Slider slides={productos} /> : <Loader />}
     </div>
   );
 }
